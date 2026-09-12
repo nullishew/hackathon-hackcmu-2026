@@ -1,0 +1,69 @@
+{
+  "floorId": "WEH:5",
+  "nodes": [
+    {
+      "id": "WEH-5-S01",
+      "floorId": "WEH:5",
+      "x": 297.58,
+      "y": 1356.9,
+      "kind": "stairs"
+    },
+    {
+      "id": "WEH-5-S02",
+      "floorId": "WEH:5",
+      "x": 1611.15,
+      "y": 1052.82,
+      "kind": "stairs"
+    },
+    {
+      "id": "WEH-5-S03",
+      "floorId": "WEH:5",
+      "x": 2854.92,
+      "y": 621.87,
+      "kind": "stairs"
+    },
+    {
+      "id": "WEH-5-S04",
+      "floorId": "WEH:5",
+      "x": 3025.39,
+      "y": 1335.38,
+      "kind": "stairs"
+    },
+    {
+      "id": "WEH-5-V01",
+      "floorId": "WEH:5",
+      "x": 1582.65,
+      "y": 1135.02,
+      "kind": "elevator"
+    }
+  ],
+  "edges": [
+    {
+      "id": "WEH-5-S01->WEH-6-S01",
+      "from": "WEH-5-S01",
+      "to": "WEH-6-S01",
+      "bidirectional": true,
+      "distanceM": 13.62,
+      "tiredIndex": 2,
+      "wheelchair": false
+    },
+    {
+      "id": "WEH-5-S02->WEH-6-S02",
+      "from": "WEH-5-S02",
+      "to": "WEH-6-S02",
+      "bidirectional": true,
+      "distanceM": 12.54,
+      "tiredIndex": 2,
+      "wheelchair": false
+    },
+    {
+      "id": "WEH-5-S03->WEH-6-S03",
+      "from": "WEH-5-S03",
+      "to": "WEH-6-S03",
+      "bidirectional": true,
+      "distanceM": 11.91,
+      "tiredIndex": 2,
+      "wheelchair": false
+    }
+  ]
+}

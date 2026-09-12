@@ -1,0 +1,13 @@
+{
+  "floorId": "DH:F",
+  "nodes": [
+    {
+      "id": "DH-F-H01",
+      "floorId": "DH:F",
+      "x": 1357.04,
+      "y": -22.07,
+      "kind": "corner"
+    }
+  ],
+  "edges": []
+}

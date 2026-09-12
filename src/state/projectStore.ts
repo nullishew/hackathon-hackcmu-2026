@@ -42,6 +42,11 @@ interface ProjectState {
   project: Project
   status: LoadStatus
   error: string | null
+  /**
+   * True when the graph came from the baked snapshot, so there is no API to save to —
+   * the public build. Surfaced in the editor rather than letting every edit fail silently.
+   */
+  readOnly: boolean
   /** Floors whose graph has unsaved changes. */
   dirtyFloors: Set<string>
   buildingsDirty: boolean
@@ -113,6 +118,7 @@ export const useProjectStore = create<ProjectState>((set, get) => {
   }
 
   function markFloorDirty(floorId: string): void {
+    if (get().readOnly) return
     const dirty = new Set(get().dirtyFloors)
     dirty.add(floorId)
     set({ dirtyFloors: dirty })
@@ -120,6 +126,7 @@ export const useProjectStore = create<ProjectState>((set, get) => {
   }
 
   function markBuildingsDirty(): void {
+    if (get().readOnly) return
     set({ buildingsDirty: true })
     scheduleBuildingsSave()
   }
@@ -210,6 +217,7 @@ export const useProjectStore = create<ProjectState>((set, get) => {
     project: emptyProject(),
     status: 'idle',
     error: null,
+    readOnly: false,
     dirtyFloors: new Set(),
     buildingsDirty: false,
     saving: false,
@@ -221,7 +229,8 @@ export const useProjectStore = create<ProjectState>((set, get) => {
     async load() {
       set({ status: 'loading', error: null })
       try {
-        set({ project: await fetchProject(), status: 'ready' })
+        const { project, source } = await fetchProject()
+        set({ project, status: 'ready', readOnly: source === 'snapshot' })
       } catch (err) {
         set({ status: 'error', error: (err as Error).message })
       }

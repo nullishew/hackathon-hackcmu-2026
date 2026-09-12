@@ -12,7 +12,8 @@
     "test:watch": "vitest",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:static": "tsc -b && vite build && tsx scripts/export-static.ts"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.8",

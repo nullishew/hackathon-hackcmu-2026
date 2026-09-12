@@ -200,6 +200,63 @@ Useful public data, no auth needed, if building placement in 3D ever needs to be
 CMU publishes survey-grade footprints for 134 buildings as GeoJSON at
 `https://services3.arcgis.com/Ew9YqyisUrOy56R6/arcgis/rest/services/CMU_Building_Features_Public_View/FeatureServer/2/query?where=1=1&outFields=*&f=geojson`.
 
+## Deploying the public site
+
+The viewer needs no server. Searching, routing and drawing all happen in the browser, and
+only the editor writes — so the graph is baked into the build as a plain file and the whole
+thing deploys as static files, free, anywhere.
+
+```bash
+npm run build:static
+```
+
+That runs the normal build, then writes into `dist/`:
+
+- `map-data.json` — the whole graph (~500 KB), validated by the same schema the app uses
+- `floorplans/` — the plan images (~10 MB)
+- `_redirects` — SPA fallback, so a refresh on `/entry` does not 404
+
+Then publish `dist/` by whichever route is quickest:
+
+**Netlify Drop** — no install, no CLI. Open <https://app.netlify.com/drop> and drag the
+`dist` folder in. You get a URL immediately; sign in afterwards to keep it.
+
+**Netlify CLI** — repeatable, better for redeploys:
+
+```bash
+npx netlify-cli deploy --prod --dir=dist
+```
+
+**Cloudflare Pages** — also reads `_redirects`:
+
+```bash
+npx wrangler pages deploy dist
+```
+
+Vercel works too but ignores `_redirects`; it needs a `vercel.json` with a catch-all rewrite
+to `/index.html`. GitHub Pages is awkward here: the repo is private, which Pages does not
+serve on the free plan, and it would need a `base` path set in `vite.config.ts`.
+
+### What the deployed site does and does not do
+
+`/` is fully working: search, routing, the tiredness dial, the 3D stack, the 2D map and
+pick-on-map all run client-side against the baked data.
+
+`/entry` loads and is explorable but **read-only** — it says so in a banner, and edits are
+not queued rather than failing one by one. Editing needs the local API (`npm run dev`).
+
+The data is a snapshot taken at build time. To publish newer tracing, re-run
+`npm run build:static` and redeploy.
+
+### Before you share the link
+
+The plan images are derived from Andrew-ID-restricted CMU documents, and a public URL
+republishes them to anyone who has it. A random `*.netlify.app` subdomain is obscurity, not
+access control. That may well be fine for a demo — but it is worth a deliberate decision
+rather than a surprise, and if it is not fine, the options are to password-protect the site
+(a paid feature on most hosts) or to deploy with the placeholder schematics instead of the
+real plans.
+
 ## Tests
 
 ```bash

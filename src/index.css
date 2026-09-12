@@ -1110,3 +1110,11 @@ button.pick-toggle.active {
 .map-points circle {
   pointer-events: none;
 }
+
+.banner.readonly {
+  background: #2e2717;
+  border-bottom: 1px solid var(--warn);
+  color: #f0dfa8;
+  padding: 7px 14px;
+  font-size: 13px;
+}

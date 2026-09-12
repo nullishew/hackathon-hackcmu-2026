@@ -45,6 +45,7 @@ export function EntryScreen() {
   const load = useProjectStore((s) => s.load)
   const saving = useProjectStore((s) => s.saving)
   const dirtyFloors = useProjectStore((s) => s.dirtyFloors)
+  const readOnly = useProjectStore((s) => s.readOnly)
   const selection = useProjectStore((s) => s.selection)
   const select = useProjectStore((s) => s.select)
   const clearSelection = useProjectStore((s) => s.clearSelection)
@@ -337,11 +338,23 @@ export function EntryScreen() {
             Redo
           </button>
           <span className={saving ? 'save-state saving' : 'save-state'}>
-            {saving ? 'Saving…' : dirtyFloors.size > 0 ? `${dirtyFloors.size} unsaved` : 'Saved'}
+            {readOnly
+              ? 'Read-only'
+              : saving
+                ? 'Saving…'
+                : dirtyFloors.size > 0
+                  ? `${dirtyFloors.size} unsaved`
+                  : 'Saved'}
           </span>
         </div>
       </header>
 
+      {readOnly && (
+        <div className="banner readonly">
+          Read-only: this build has no data API, so edits are not saved. Run{' '}
+          <code>npm run dev</code> locally to edit the map.
+        </div>
+      )}
       {error && <div className="banner error">{error}</div>}
 
       <div className="entry-body">

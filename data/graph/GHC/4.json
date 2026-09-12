@@ -6,7 +6,7 @@
       "floorId": "GHC:4",
       "x": 593.09,
       "y": 2048.94,
-      "kind": "entrance",
+      "kind": "elevator",
       "name": "To NSH"
     },
     {
@@ -1621,7 +1621,7 @@
       "bidirectional": true,
       "distanceM": 1.71,
       "tiredIndex": 1,
-      "wheelchair": false
+      "wheelchair": true
     },
     {
       "id": "GHC-4-H39->GHC-6-V01",
@@ -2151,6 +2151,15 @@
       "to": "GHC-4-H21",
       "bidirectional": true,
       "distanceM": 5.76,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-4-R19->GHC-4-H01",
+      "from": "GHC-4-R19",
+      "to": "GHC-4-H01",
+      "bidirectional": true,
+      "distanceM": 7.35,
       "tiredIndex": 1,
       "wheelchair": true
     },

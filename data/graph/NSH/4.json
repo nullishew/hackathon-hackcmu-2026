@@ -6,7 +6,7 @@
       "floorId": "NSH:4",
       "x": 2408.83,
       "y": 867.75,
-      "kind": "entrance",
+      "kind": "elevator",
       "name": "NSH to GHC"
     },
     {
@@ -14,7 +14,7 @@
       "floorId": "NSH:4",
       "x": 1454,
       "y": 1954,
-      "kind": "entrance",
+      "kind": "elevator",
       "name": "NSH to Wean"
     },
     {
@@ -1168,8 +1168,8 @@
       "to": "GHC-4-E01",
       "bidirectional": true,
       "distanceM": 6.62,
-      "tiredIndex": 1,
-      "wheelchair": false
+      "tiredIndex": 0.25,
+      "wheelchair": true
     },
     {
       "id": "NSH-4-E01->NSH-4-H01",
@@ -1825,6 +1825,15 @@
       "to": "NSH-4-R31",
       "bidirectional": true,
       "distanceM": 7.71,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H36->NSH-4-H01",
+      "from": "NSH-4-H36",
+      "to": "NSH-4-H01",
+      "bidirectional": true,
+      "distanceM": 10.19,
       "tiredIndex": 1,
       "wheelchair": true
     },

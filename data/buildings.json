@@ -1,6 +1,288 @@
 {
   "buildings": [
     {
+      "id": "DH",
+      "name": "Doherty Hall",
+      "placement": {
+        "x": 74,
+        "y": 199,
+        "rotationDeg": 0
+      },
+      "floors": [
+        {
+          "id": "DH:F",
+          "buildingId": "DH",
+          "floorKey": "F",
+          "ordinal": -5,
+          "elevationM": -18,
+          "image": {
+            "src": "/floorplans/DH/F.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "DH:E",
+          "buildingId": "DH",
+          "floorKey": "E",
+          "ordinal": -4,
+          "elevationM": -13.5,
+          "image": {
+            "src": "/floorplans/DH/E.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "DH:D",
+          "buildingId": "DH",
+          "floorKey": "D",
+          "ordinal": -3,
+          "elevationM": -9,
+          "image": {
+            "src": "/floorplans/DH/D.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "DH:C",
+          "buildingId": "DH",
+          "floorKey": "C",
+          "ordinal": -2,
+          "elevationM": -4.5,
+          "image": {
+            "src": "/floorplans/DH/C.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "DH:CM",
+          "buildingId": "DH",
+          "floorKey": "CM",
+          "ordinal": -1.5,
+          "elevationM": -2.25,
+          "image": {
+            "src": "/floorplans/DH/CM.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "DH:B",
+          "buildingId": "DH",
+          "floorKey": "B",
+          "ordinal": -1,
+          "elevationM": 0,
+          "image": {
+            "src": "/floorplans/DH/B.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "DH:BM",
+          "buildingId": "DH",
+          "floorKey": "BM",
+          "ordinal": -0.5,
+          "elevationM": 2.25,
+          "image": {
+            "src": "/floorplans/DH/BM.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "DH:A",
+          "buildingId": "DH",
+          "floorKey": "A",
+          "ordinal": 0,
+          "elevationM": 4.5,
+          "image": {
+            "src": "/floorplans/DH/A.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "DH:AM",
+          "buildingId": "DH",
+          "floorKey": "AM",
+          "ordinal": 0.5,
+          "elevationM": 6.75,
+          "image": {
+            "src": "/floorplans/DH/AM.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "DH:1",
+          "buildingId": "DH",
+          "floorKey": "1",
+          "ordinal": 1,
+          "elevationM": 9,
+          "image": {
+            "src": "/floorplans/DH/1.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "DH:1M",
+          "buildingId": "DH",
+          "floorKey": "1M",
+          "ordinal": 1.5,
+          "elevationM": 11.25,
+          "image": {
+            "src": "/floorplans/DH/1M.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "DH:2",
+          "buildingId": "DH",
+          "floorKey": "2",
+          "ordinal": 2,
+          "elevationM": 13.5,
+          "image": {
+            "src": "/floorplans/DH/2.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "DH:3",
+          "buildingId": "DH",
+          "floorKey": "3",
+          "ordinal": 3,
+          "elevationM": 18,
+          "image": {
+            "src": "/floorplans/DH/3.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "DH:4",
+          "buildingId": "DH",
+          "floorKey": "4",
+          "ordinal": 4,
+          "elevationM": 22.5,
+          "image": {
+            "src": "/floorplans/DH/4.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "DH:4M",
+          "buildingId": "DH",
+          "floorKey": "4M",
+          "ordinal": 4.5,
+          "elevationM": 24.75,
+          "image": {
+            "src": "/floorplans/DH/4M.png",
+            "widthPx": 3273,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        }
+      ],
+      "shortName": "Doherty"
+    },
+    {
       "id": "GHC",
       "name": "Gates and Hillman Centers",
       "shortName": "Gates",
@@ -299,8 +581,8 @@
       "name": "Wean Hall",
       "shortName": "Wean",
       "placement": {
-        "x": 320,
-        "y": 0,
+        "x": -145,
+        "y": 217,
         "rotationDeg": 0
       },
       "floors": [
@@ -309,63 +591,162 @@
           "buildingId": "WEH",
           "floorKey": "1",
           "ordinal": 1,
-          "elevationM": 0
+          "elevationM": -13.5,
+          "image": {
+            "src": "/floorplans/WEH/1.png",
+            "widthPx": 3495,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
         },
         {
           "id": "WEH:2",
           "buildingId": "WEH",
           "floorKey": "2",
           "ordinal": 2,
-          "elevationM": 4.5
+          "elevationM": -9,
+          "image": {
+            "src": "/floorplans/WEH/2.png",
+            "widthPx": 3495,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
         },
         {
           "id": "WEH:3",
           "buildingId": "WEH",
           "floorKey": "3",
           "ordinal": 3,
-          "elevationM": 9
+          "elevationM": -4.5,
+          "image": {
+            "src": "/floorplans/WEH/3.png",
+            "widthPx": 3495,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
         },
         {
           "id": "WEH:4",
           "buildingId": "WEH",
           "floorKey": "4",
           "ordinal": 4,
-          "elevationM": 13.5
+          "elevationM": 0,
+          "image": {
+            "src": "/floorplans/WEH/4.png",
+            "widthPx": 3495,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
         },
         {
           "id": "WEH:5",
           "buildingId": "WEH",
           "floorKey": "5",
           "ordinal": 5,
-          "elevationM": 18
+          "elevationM": 4.5,
+          "image": {
+            "src": "/floorplans/WEH/5.png",
+            "widthPx": 3495,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
         },
         {
           "id": "WEH:6",
           "buildingId": "WEH",
           "floorKey": "6",
           "ordinal": 6,
-          "elevationM": 22.5
+          "elevationM": 9,
+          "image": {
+            "src": "/floorplans/WEH/6.png",
+            "widthPx": 3495,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
         },
         {
           "id": "WEH:7",
           "buildingId": "WEH",
           "floorKey": "7",
           "ordinal": 7,
-          "elevationM": 27
+          "elevationM": 13.5,
+          "image": {
+            "src": "/floorplans/WEH/7.png",
+            "widthPx": 3495,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
         },
         {
           "id": "WEH:8",
           "buildingId": "WEH",
           "floorKey": "8",
           "ordinal": 8,
-          "elevationM": 31.5
+          "elevationM": 18,
+          "image": {
+            "src": "/floorplans/WEH/8.png",
+            "widthPx": 3495,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
         },
         {
           "id": "WEH:9",
           "buildingId": "WEH",
           "floorKey": "9",
           "ordinal": 9,
-          "elevationM": 36
+          "elevationM": 22.5,
+          "image": {
+            "src": "/floorplans/WEH/9.png",
+            "widthPx": 3495,
+            "heightPx": 2096
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
         }
       ]
     }
@@ -390,6 +771,15 @@
       "buildingId": "GHC",
       "aliases": [
         "helix"
+      ]
+    },
+    {
+      "id": "feat-dh-ramps",
+      "kind": "ramp",
+      "name": "Doherty mezzanine ramps",
+      "buildingId": "DH",
+      "aliases": [
+        "mezzanine"
       ]
     }
   ]

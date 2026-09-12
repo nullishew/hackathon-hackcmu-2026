@@ -90,6 +90,7 @@ export function LegView({
         hideGraph
         routeSegments={segments}
         viewportApi={viewportApi}
+        panWithPrimaryPointer
         overlay={
           <>
             {start && (

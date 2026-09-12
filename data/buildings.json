@@ -179,8 +179,8 @@
       "name": "Newell Simon Hall",
       "shortName": "Newell-Simon",
       "placement": {
-        "x": 180,
-        "y": 0,
+        "x": -130,
+        "y": 77,
         "rotationDeg": 0
       },
       "floors": [
@@ -291,6 +291,81 @@
             "originY": 0,
             "rotationDeg": 0
           }
+        }
+      ]
+    },
+    {
+      "id": "WEH",
+      "name": "Wean Hall",
+      "shortName": "Wean",
+      "placement": {
+        "x": 320,
+        "y": 0,
+        "rotationDeg": 0
+      },
+      "floors": [
+        {
+          "id": "WEH:1",
+          "buildingId": "WEH",
+          "floorKey": "1",
+          "ordinal": 1,
+          "elevationM": 0
+        },
+        {
+          "id": "WEH:2",
+          "buildingId": "WEH",
+          "floorKey": "2",
+          "ordinal": 2,
+          "elevationM": 4.5
+        },
+        {
+          "id": "WEH:3",
+          "buildingId": "WEH",
+          "floorKey": "3",
+          "ordinal": 3,
+          "elevationM": 9
+        },
+        {
+          "id": "WEH:4",
+          "buildingId": "WEH",
+          "floorKey": "4",
+          "ordinal": 4,
+          "elevationM": 13.5
+        },
+        {
+          "id": "WEH:5",
+          "buildingId": "WEH",
+          "floorKey": "5",
+          "ordinal": 5,
+          "elevationM": 18
+        },
+        {
+          "id": "WEH:6",
+          "buildingId": "WEH",
+          "floorKey": "6",
+          "ordinal": 6,
+          "elevationM": 22.5
+        },
+        {
+          "id": "WEH:7",
+          "buildingId": "WEH",
+          "floorKey": "7",
+          "ordinal": 7,
+          "elevationM": 27
+        },
+        {
+          "id": "WEH:8",
+          "buildingId": "WEH",
+          "floorKey": "8",
+          "ordinal": 8,
+          "elevationM": 31.5
+        },
+        {
+          "id": "WEH:9",
+          "buildingId": "WEH",
+          "floorKey": "9",
+          "ordinal": 9,
+          "elevationM": 36
         }
       ]
     }

@@ -3593,6 +3593,15 @@
       "wheelchair": true
     },
     {
+      "id": "GHC-7-S01->GHC-8-S01",
+      "from": "GHC-7-S01",
+      "to": "GHC-8-S01",
+      "bidirectional": true,
+      "distanceM": 37.47,
+      "tiredIndex": 2,
+      "wheelchair": false
+    },
+    {
       "id": "GHC-7-S02->GHC-6-S02",
       "from": "GHC-7-S02",
       "to": "GHC-6-S02",
@@ -3634,6 +3643,15 @@
       "to": "GHC-6-S04",
       "bidirectional": true,
       "distanceM": 27.43,
+      "tiredIndex": 2,
+      "wheelchair": false
+    },
+    {
+      "id": "GHC-7-S08->GHC-8-S02",
+      "from": "GHC-7-S08",
+      "to": "GHC-8-S02",
+      "bidirectional": true,
+      "distanceM": 43.47,
       "tiredIndex": 2,
       "wheelchair": false
     },

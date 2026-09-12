@@ -1,0 +1,81 @@
+{
+  "floorId": "GHC:9",
+  "nodes": [
+    {
+      "id": "GHC-9-H01",
+      "floorId": "GHC:9",
+      "x": 160,
+      "y": 300,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-9-H02",
+      "floorId": "GHC:9",
+      "x": 260,
+      "y": 300,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-9-R01",
+      "floorId": "GHC:9",
+      "x": 160,
+      "y": 220,
+      "kind": "room",
+      "roomNumber": "9301"
+    },
+    {
+      "id": "GHC-9-S01",
+      "floorId": "GHC:9",
+      "x": 130,
+      "y": 300,
+      "kind": "stairs",
+      "featureId": "feat-helix"
+    },
+    {
+      "id": "GHC-9-V01",
+      "floorId": "GHC:9",
+      "x": 360,
+      "y": 300,
+      "kind": "elevator",
+      "featureId": "feat-elev-a"
+    }
+  ],
+  "edges": [
+    {
+      "id": "GHC-9-H01->GHC-9-H02",
+      "from": "GHC-9-H01",
+      "to": "GHC-9-H02",
+      "bidirectional": true,
+      "distanceM": 10,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-9-H01->GHC-9-R01",
+      "from": "GHC-9-H01",
+      "to": "GHC-9-R01",
+      "bidirectional": true,
+      "distanceM": 8,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-9-H02->GHC-9-V01",
+      "from": "GHC-9-H02",
+      "to": "GHC-9-V01",
+      "bidirectional": true,
+      "distanceM": 10,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-9-S01->GHC-9-H01",
+      "from": "GHC-9-S01",
+      "to": "GHC-9-H01",
+      "bidirectional": true,
+      "distanceM": 3,
+      "tiredIndex": 1,
+      "wheelchair": true
+    }
+  ]
+}

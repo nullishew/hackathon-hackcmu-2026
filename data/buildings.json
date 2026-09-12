@@ -1,0 +1,147 @@
+{
+  "buildings": [
+    {
+      "id": "GHC",
+      "name": "Gates and Hillman Centers",
+      "shortName": "Gates",
+      "placement": {
+        "x": 0,
+        "y": 0,
+        "rotationDeg": 0
+      },
+      "floors": [
+        {
+          "id": "GHC:4",
+          "buildingId": "GHC",
+          "floorKey": "4",
+          "ordinal": 4,
+          "elevationM": 0,
+          "image": {
+            "src": "/floorplans/GHC/4.svg",
+            "widthPx": 1000,
+            "heightPx": 600
+          },
+          "calibration": {
+            "pixelsPerMeter": 10,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "GHC:5",
+          "buildingId": "GHC",
+          "floorKey": "5",
+          "ordinal": 5,
+          "elevationM": 4.5,
+          "image": {
+            "src": "/floorplans/GHC/5.svg",
+            "widthPx": 1000,
+            "heightPx": 600
+          },
+          "calibration": {
+            "pixelsPerMeter": 10,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "GHC:6",
+          "buildingId": "GHC",
+          "floorKey": "6",
+          "ordinal": 6,
+          "elevationM": 9,
+          "image": {
+            "src": "/floorplans/GHC/6.svg",
+            "widthPx": 1000,
+            "heightPx": 600
+          },
+          "calibration": {
+            "pixelsPerMeter": 10,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "GHC:7",
+          "buildingId": "GHC",
+          "floorKey": "7",
+          "ordinal": 7,
+          "elevationM": 13.5,
+          "image": {
+            "src": "/floorplans/GHC/7.svg",
+            "widthPx": 1000,
+            "heightPx": 600
+          },
+          "calibration": {
+            "pixelsPerMeter": 10,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "GHC:8",
+          "buildingId": "GHC",
+          "floorKey": "8",
+          "ordinal": 8,
+          "elevationM": 18,
+          "image": {
+            "src": "/floorplans/GHC/8.svg",
+            "widthPx": 1000,
+            "heightPx": 600
+          },
+          "calibration": {
+            "pixelsPerMeter": 10,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "GHC:9",
+          "buildingId": "GHC",
+          "floorKey": "9",
+          "ordinal": 9,
+          "elevationM": 22.5,
+          "image": {
+            "src": "/floorplans/GHC/9.svg",
+            "widthPx": 1000,
+            "heightPx": 600
+          },
+          "calibration": {
+            "pixelsPerMeter": 10,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "feat-cut",
+      "kind": "exit",
+      "name": "the Cut",
+      "buildingId": "GHC"
+    },
+    {
+      "id": "feat-elev-a",
+      "kind": "elevator_bank",
+      "name": "the Hillman elevators",
+      "buildingId": "GHC"
+    },
+    {
+      "id": "feat-helix",
+      "kind": "stairwell",
+      "name": "the Helix",
+      "buildingId": "GHC",
+      "aliases": [
+        "helix"
+      ]
+    }
+  ]
+}

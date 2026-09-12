@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Raw downloaded floor plans and evacuation PDFs stay local — never commit these.
+data/sources/

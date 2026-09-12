@@ -7,6 +7,7 @@
  */
 import { useEffect, useRef, type ReactNode } from 'react'
 import type { EdgeKind } from '../model/edges'
+import { nodeStyle } from '../model/nodeStyle'
 import type { Floor, GraphEdge, GraphNode } from '../model/types'
 import { useViewport, type Point, type ViewportApi } from './useViewport'
 
@@ -43,17 +44,6 @@ export interface FloorCanvasProps {
   panWithPrimaryPointer?: boolean
 }
 
-const NODE_STYLE: Record<string, { fill: string; r: number }> = {
-  room: { fill: '#7082b3', r: 6 },
-  corner: { fill: '#8d8a84', r: 4.5 },
-  stairs: { fill: '#3b92f0', r: 7 },
-  elevator: { fill: '#7a5cf0', r: 7 },
-  ramp: { fill: '#2aa9a0', r: 6 },
-  door: { fill: '#b08a4a', r: 5 },
-  entrance: { fill: '#e0851f', r: 7 },
-  restroom: { fill: '#c39dff', r: 6 },
-  poi: { fill: '#d1605e', r: 6 },
-}
 
 const EDGE_COLOR: Record<EdgeKind, string> = {
   walk: '#9b978f',
@@ -239,7 +229,7 @@ export function FloorCanvas({
         {!hideGraph && (
           <g className="graph-nodes">
             {nodes.map((node) => {
-              const style = NODE_STYLE[node.kind] ?? NODE_STYLE.corner
+              const style = nodeStyle(node.kind)
               const selected = selectedNodeIds?.has(node.id)
               const onRoute = routeNodeIds?.has(node.id)
               return (

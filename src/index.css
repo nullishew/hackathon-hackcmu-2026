@@ -1063,3 +1063,50 @@ ul.pdf-pages img {
   flex-direction: column;
   gap: 5px;
 }
+
+/* ===================== pick-a-point-on-the-map ===================== */
+
+.field-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.field-head .field-label {
+  margin-bottom: 0;
+}
+button.pick-toggle {
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 11.5px;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+button.pick-toggle:hover:not(:disabled) {
+  color: var(--text);
+  border-color: var(--line-strong);
+}
+button.pick-toggle.active {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  color: #fff6e6;
+}
+
+/* Crosshair while choosing, so the map reads as a target rather than a canvas to drag. */
+.building-map-canvas.picking,
+.building-map-canvas.picking:active {
+  cursor: crosshair;
+}
+
+.map-help.picking {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Points are dense; keep them from swallowing the plan underneath. */
+.map-points circle {
+  pointer-events: none;
+}

@@ -11,6 +11,7 @@ import { defaultRouteOptions, findRoute, type RouteOptions } from '../routing/ro
 import { useProjectStore } from '../state/projectStore'
 import { StackScene } from '../viewer3d/StackScene'
 import { BuildingMap } from './BuildingMap'
+import type { PickTarget } from './pick'
 import { FilterPanel } from './FilterPanel'
 import { SearchField } from './SearchField'
 import { NARROW_QUERY, useMediaQuery } from './useMediaQuery'
@@ -26,6 +27,8 @@ export function ViewerScreen() {
   const [options, setOptions] = useState<RouteOptions>(defaultRouteOptions)
   const [exaggeration, setExaggeration] = useState(2.5)
   const [viewMode, setViewMode] = useState<'3d' | '2d'>('3d')
+  /** Which endpoint a map tap fills in, or null when tapping does nothing. */
+  const [picking, setPicking] = useState<PickTarget | null>(null)
 
   const isNarrow = useMediaQuery(NARROW_QUERY)
   /**
@@ -41,6 +44,35 @@ export function ViewerScreen() {
   }, [load])
 
   const labeler = useMemo(() => createLabeler(project), [project])
+
+  /**
+   * Picking only works on the 2D map, so asking to pick switches to it — and on a phone
+   * the route drawer is covering the thing you are being asked to tap.
+   */
+  function togglePicking(target: PickTarget) {
+    const next = picking === target ? null : target
+    setPicking(next)
+    if (next) {
+      setViewMode('2d')
+      if (isNarrow) setPanelChoice(false)
+    }
+  }
+
+  /**
+   * After setting the start, advance to the destination rather than dropping out of pick
+   * mode — choosing both ends is the common case, and it makes it two taps.
+   */
+  function handlePickNode(nodeId: string) {
+    if (picking === 'from') {
+      setFromId(nodeId)
+      setPicking(toId ? null : 'to')
+      return
+    }
+    if (picking === 'to') {
+      setToId(nodeId)
+      setPicking(fromId ? null : 'from')
+    }
+  }
 
   const result = useMemo(() => {
     if (!fromId || !toId) return null
@@ -96,6 +128,8 @@ export function ViewerScreen() {
           labeler={labeler}
           selectedId={fromId}
           onSelect={setFromId}
+          picking={picking === 'from'}
+          onTogglePick={() => togglePicking('from')}
         />
         <SearchField
           label="Where are you going?"
@@ -104,6 +138,8 @@ export function ViewerScreen() {
           labeler={labeler}
           selectedId={toId}
           onSelect={setToId}
+          picking={picking === 'to'}
+          onTogglePick={() => togglePicking('to')}
         />
         <button
           type="button"
@@ -213,7 +249,10 @@ export function ViewerScreen() {
           <button
             type="button"
             className={viewMode === '3d' ? 'tab active' : 'tab'}
-            onClick={() => setViewMode('3d')}
+            onClick={() => {
+              setViewMode('3d')
+              setPicking(null)
+            }}
           >
             3D stack
           </button>
@@ -246,7 +285,15 @@ export function ViewerScreen() {
         {/* The stage body owns the remaining height, which the 3D canvas needs resolved. */}
         <div className="stage-body">
           {viewMode === '2d' ? (
-            <BuildingMap project={project} route={route} />
+            <BuildingMap
+              project={project}
+              route={route}
+              labeler={labeler}
+              picking={picking}
+              fromId={fromId}
+              toId={toId}
+              onPickNode={handlePickNode}
+            />
           ) : (
             <StackScene
               project={project}

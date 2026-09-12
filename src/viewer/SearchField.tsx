@@ -11,6 +11,8 @@ export function SearchField({
   labeler,
   selectedId,
   onSelect,
+  picking,
+  onTogglePick,
 }: {
   label: string
   placeholder: string
@@ -18,6 +20,9 @@ export function SearchField({
   labeler: Labeler
   selectedId: string | null
   onSelect: (nodeId: string | null) => void
+  /** True while map taps are filling in THIS field. */
+  picking?: boolean
+  onTogglePick?: () => void
 }) {
   const [query, setQuery] = useState('')
   const [open, setOpen] = useState(false)
@@ -31,7 +36,20 @@ export function SearchField({
 
   return (
     <div className="search-field">
-      <span className="field-label">{label}</span>
+      <div className="field-head">
+        <span className="field-label">{label}</span>
+        {onTogglePick && (
+          <button
+            type="button"
+            className={picking ? 'pick-toggle active' : 'pick-toggle'}
+            aria-pressed={picking}
+            title="Choose this point by tapping the 2D map"
+            onClick={onTogglePick}
+          >
+            {picking ? 'Tap the map…' : '⊕ Pick on map'}
+          </button>
+        )}
+      </div>
 
       {selected ? (
         <div className="chosen">

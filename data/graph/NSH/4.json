@@ -1,0 +1,2615 @@
+{
+  "floorId": "NSH:4",
+  "nodes": [
+    {
+      "id": "NSH-4-E01",
+      "floorId": "NSH:4",
+      "x": 2408.83,
+      "y": 867.75,
+      "kind": "entrance",
+      "name": "NSH to GHC"
+    },
+    {
+      "id": "NSH-4-E02",
+      "floorId": "NSH:4",
+      "x": 1454,
+      "y": 1954,
+      "kind": "entrance",
+      "name": "NSH to Wean"
+    },
+    {
+      "id": "NSH-4-H01",
+      "floorId": "NSH:4",
+      "x": 2248.19,
+      "y": 869.39,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H02",
+      "floorId": "NSH:4",
+      "x": 2240,
+      "y": 1213.15,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H03",
+      "floorId": "NSH:4",
+      "x": 1300.39,
+      "y": 1216.43,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H04",
+      "floorId": "NSH:4",
+      "x": 1272.56,
+      "y": 959.42,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H05",
+      "floorId": "NSH:4",
+      "x": 946.81,
+      "y": 967.61,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H06",
+      "floorId": "NSH:4",
+      "x": 845.32,
+      "y": 957.79,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H07",
+      "floorId": "NSH:4",
+      "x": 838.77,
+      "y": 1057.64,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H08",
+      "floorId": "NSH:4",
+      "x": 842.04,
+      "y": 1168.95,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H09",
+      "floorId": "NSH:4",
+      "x": 879.69,
+      "y": 825.19,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H10",
+      "floorId": "NSH:4",
+      "x": 869.87,
+      "y": 756.44,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H11",
+      "floorId": "NSH:4",
+      "x": 778.2,
+      "y": 766.26,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H12",
+      "floorId": "NSH:4",
+      "x": 622.69,
+      "y": 751.53,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H13",
+      "floorId": "NSH:4",
+      "x": 508.1,
+      "y": 744.98,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H14",
+      "floorId": "NSH:4",
+      "x": 362.41,
+      "y": 746.62,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H15",
+      "floorId": "NSH:4",
+      "x": 344.41,
+      "y": 614.03,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H16",
+      "floorId": "NSH:4",
+      "x": 350.95,
+      "y": 532.18,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H17",
+      "floorId": "NSH:4",
+      "x": 364.05,
+      "y": 401.22,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H18",
+      "floorId": "NSH:4",
+      "x": 511.38,
+      "y": 394.67,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H19",
+      "floorId": "NSH:4",
+      "x": 640.7,
+      "y": 389.76,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H20",
+      "floorId": "NSH:4",
+      "x": 724.18,
+      "y": 389.76,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H21",
+      "floorId": "NSH:4",
+      "x": 720.91,
+      "y": 563.28,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H22",
+      "floorId": "NSH:4",
+      "x": 804.39,
+      "y": 553.46,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H23",
+      "floorId": "NSH:4",
+      "x": 951.72,
+      "y": 563.28,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H24",
+      "floorId": "NSH:4",
+      "x": 1123.6,
+      "y": 560.01,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H25",
+      "floorId": "NSH:4",
+      "x": 1241.46,
+      "y": 550.18,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H26",
+      "floorId": "NSH:4",
+      "x": 1275.84,
+      "y": 651.68,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H27",
+      "floorId": "NSH:4",
+      "x": 1274.2,
+      "y": 754.8,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H28",
+      "floorId": "NSH:4",
+      "x": 1153.06,
+      "y": 753.17,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H29",
+      "floorId": "NSH:4",
+      "x": 976.27,
+      "y": 749.89,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H30",
+      "floorId": "NSH:4",
+      "x": 1462.45,
+      "y": 762.99,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H31",
+      "floorId": "NSH:4",
+      "x": 1627.78,
+      "y": 749.89,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H32",
+      "floorId": "NSH:4",
+      "x": 1770.2,
+      "y": 761.35,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H33",
+      "floorId": "NSH:4",
+      "x": 1907.7,
+      "y": 746.62,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H34",
+      "floorId": "NSH:4",
+      "x": 2019.02,
+      "y": 736.8,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H35",
+      "floorId": "NSH:4",
+      "x": 2133.6,
+      "y": 736.8,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H36",
+      "floorId": "NSH:4",
+      "x": 2238.37,
+      "y": 725.34,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H37",
+      "floorId": "NSH:4",
+      "x": 2249.83,
+      "y": 553.46,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H38",
+      "floorId": "NSH:4",
+      "x": 2233.46,
+      "y": 391.4,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H39",
+      "floorId": "NSH:4",
+      "x": 2118.87,
+      "y": 375.03,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H40",
+      "floorId": "NSH:4",
+      "x": 1992.82,
+      "y": 383.21,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H41",
+      "floorId": "NSH:4",
+      "x": 1881.51,
+      "y": 399.58,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H42",
+      "floorId": "NSH:4",
+      "x": 1842.22,
+      "y": 489.62,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H43",
+      "floorId": "NSH:4",
+      "x": 1827.49,
+      "y": 645.13,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H44",
+      "floorId": "NSH:4",
+      "x": 2241.64,
+      "y": 1340.83,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H45",
+      "floorId": "NSH:4",
+      "x": 2243.28,
+      "y": 1457.06,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H46",
+      "floorId": "NSH:4",
+      "x": 2133.6,
+      "y": 1440.69,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H47",
+      "floorId": "NSH:4",
+      "x": 2037.02,
+      "y": 1437.42,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H48",
+      "floorId": "NSH:4",
+      "x": 1925.71,
+      "y": 1439.05,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H49",
+      "floorId": "NSH:4",
+      "x": 1820.94,
+      "y": 1437.42,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H50",
+      "floorId": "NSH:4",
+      "x": 1658.88,
+      "y": 1443.96,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H51",
+      "floorId": "NSH:4",
+      "x": 1511.56,
+      "y": 1442.33,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H52",
+      "floorId": "NSH:4",
+      "x": 1372.42,
+      "y": 1447.24,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H53",
+      "floorId": "NSH:4",
+      "x": 2244.92,
+      "y": 1614.21,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H54",
+      "floorId": "NSH:4",
+      "x": 2243.28,
+      "y": 1736.98,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H55",
+      "floorId": "NSH:4",
+      "x": 2082.86,
+      "y": 1723.88,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H56",
+      "floorId": "NSH:4",
+      "x": 1999.37,
+      "y": 1718.97,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H57",
+      "floorId": "NSH:4",
+      "x": 1852.05,
+      "y": 1728.79,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H58",
+      "floorId": "NSH:4",
+      "x": 1753.83,
+      "y": 1728.79,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H59",
+      "floorId": "NSH:4",
+      "x": 1447.72,
+      "y": 1730.43,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H60",
+      "floorId": "NSH:4",
+      "x": 1254.56,
+      "y": 1723.88,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H61",
+      "floorId": "NSH:4",
+      "x": 1120.32,
+      "y": 1715.7,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H62",
+      "floorId": "NSH:4",
+      "x": 912.43,
+      "y": 1718.97,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H63",
+      "floorId": "NSH:4",
+      "x": 778.2,
+      "y": 1715.7,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H64",
+      "floorId": "NSH:4",
+      "x": 545.75,
+      "y": 1720.61,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H65",
+      "floorId": "NSH:4",
+      "x": 540.84,
+      "y": 1571.65,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H66",
+      "floorId": "NSH:4",
+      "x": 557.21,
+      "y": 1442.33,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H67",
+      "floorId": "NSH:4",
+      "x": 712.72,
+      "y": 1430.87,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H68",
+      "floorId": "NSH:4",
+      "x": 938.62,
+      "y": 1440.69,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-H69",
+      "floorId": "NSH:4",
+      "x": 1198.9,
+      "y": 1434.14,
+      "kind": "corner"
+    },
+    {
+      "id": "NSH-4-R01",
+      "floorId": "NSH:4",
+      "x": 228.18,
+      "y": 363.57,
+      "kind": "room",
+      "roomNumber": "4113"
+    },
+    {
+      "id": "NSH-4-R02",
+      "floorId": "NSH:4",
+      "x": 377.15,
+      "y": 306.28,
+      "kind": "room",
+      "roomNumber": "4111"
+    },
+    {
+      "id": "NSH-4-R03",
+      "floorId": "NSH:4",
+      "x": 499.92,
+      "y": 296.46,
+      "kind": "room",
+      "roomNumber": "4109"
+    },
+    {
+      "id": "NSH-4-R04",
+      "floorId": "NSH:4",
+      "x": 634.15,
+      "y": 288.27,
+      "kind": "room",
+      "roomNumber": "4107"
+    },
+    {
+      "id": "NSH-4-R05",
+      "floorId": "NSH:4",
+      "x": 807.67,
+      "y": 427.41,
+      "kind": "room",
+      "roomNumber": "4105"
+    },
+    {
+      "id": "NSH-4-R06",
+      "floorId": "NSH:4",
+      "x": 987.73,
+      "y": 425.77,
+      "kind": "room",
+      "roomNumber": "4103"
+    },
+    {
+      "id": "NSH-4-R07",
+      "floorId": "NSH:4",
+      "x": 1118.69,
+      "y": 466.7,
+      "kind": "room",
+      "roomNumber": "4101"
+    },
+    {
+      "id": "NSH-4-R08",
+      "floorId": "NSH:4",
+      "x": 557.21,
+      "y": 571.46,
+      "kind": "room",
+      "roomNumber": "4124"
+    },
+    {
+      "id": "NSH-4-R09",
+      "floorId": "NSH:4",
+      "x": 752.01,
+      "y": 636.94,
+      "kind": "room",
+      "roomNumber": "4126"
+    },
+    {
+      "id": "NSH-4-R10",
+      "floorId": "NSH:4",
+      "x": 201.99,
+      "y": 497.8,
+      "kind": "room",
+      "roomNumber": "4115"
+    },
+    {
+      "id": "NSH-4-R11",
+      "floorId": "NSH:4",
+      "x": 223.27,
+      "y": 645.13,
+      "kind": "room",
+      "roomNumber": "4117"
+    },
+    {
+      "id": "NSH-4-R12",
+      "floorId": "NSH:4",
+      "x": 200.35,
+      "y": 800.64,
+      "kind": "room",
+      "roomNumber": "4119"
+    },
+    {
+      "id": "NSH-4-R13",
+      "floorId": "NSH:4",
+      "x": 360.78,
+      "y": 848.11,
+      "kind": "room",
+      "roomNumber": "4121"
+    },
+    {
+      "id": "NSH-4-R14",
+      "floorId": "NSH:4",
+      "x": 506.47,
+      "y": 853.02,
+      "kind": "room",
+      "roomNumber": "4123"
+    },
+    {
+      "id": "NSH-4-R15",
+      "floorId": "NSH:4",
+      "x": 617.78,
+      "y": 864.48,
+      "kind": "room",
+      "roomNumber": "4125"
+    },
+    {
+      "id": "NSH-4-R16",
+      "floorId": "NSH:4",
+      "x": 761.83,
+      "y": 841.56,
+      "kind": "room",
+      "roomNumber": "4127"
+    },
+    {
+      "id": "NSH-4-R17",
+      "floorId": "NSH:4",
+      "x": 874.78,
+      "y": 666.41,
+      "kind": "room",
+      "roomNumber": "4106"
+    },
+    {
+      "id": "NSH-4-R18",
+      "floorId": "NSH:4",
+      "x": 1000.83,
+      "y": 661.5,
+      "kind": "room",
+      "roomNumber": "4104"
+    },
+    {
+      "id": "NSH-4-R19",
+      "floorId": "NSH:4",
+      "x": 1135.06,
+      "y": 654.95,
+      "kind": "room",
+      "roomNumber": "4102"
+    },
+    {
+      "id": "NSH-4-R20",
+      "floorId": "NSH:4",
+      "x": 1454.26,
+      "y": 465.06,
+      "kind": "room",
+      "roomNumber": "4201"
+    },
+    {
+      "id": "NSH-4-R21",
+      "floorId": "NSH:4",
+      "x": 1552.48,
+      "y": 630.39,
+      "kind": "room",
+      "roomNumber": "4228"
+    },
+    {
+      "id": "NSH-4-R22",
+      "floorId": "NSH:4",
+      "x": 1904.43,
+      "y": 281.72,
+      "kind": "room",
+      "roomNumber": "4207"
+    },
+    {
+      "id": "NSH-4-R23",
+      "floorId": "NSH:4",
+      "x": 2043.57,
+      "y": 296.46,
+      "kind": "room",
+      "roomNumber": "4209"
+    },
+    {
+      "id": "NSH-4-R24",
+      "floorId": "NSH:4",
+      "x": 2159.79,
+      "y": 304.64,
+      "kind": "room",
+      "roomNumber": "4211"
+    },
+    {
+      "id": "NSH-4-R25",
+      "floorId": "NSH:4",
+      "x": 2316.94,
+      "y": 306.28,
+      "kind": "room",
+      "roomNumber": "4213"
+    },
+    {
+      "id": "NSH-4-R26",
+      "floorId": "NSH:4",
+      "x": 2333.31,
+      "y": 445.42,
+      "kind": "room",
+      "roomNumber": "4215"
+    },
+    {
+      "id": "NSH-4-R27",
+      "floorId": "NSH:4",
+      "x": 2321.85,
+      "y": 563.28,
+      "kind": "room",
+      "roomNumber": "4217"
+    },
+    {
+      "id": "NSH-4-R28",
+      "floorId": "NSH:4",
+      "x": 2032.11,
+      "y": 514.17,
+      "kind": "room",
+      "roomNumber": "4208"
+    },
+    {
+      "id": "NSH-4-R29",
+      "floorId": "NSH:4",
+      "x": 2122.14,
+      "y": 650.04,
+      "kind": "room",
+      "roomNumber": "4222"
+    },
+    {
+      "id": "NSH-4-R30",
+      "floorId": "NSH:4",
+      "x": 1991.19,
+      "y": 653.31,
+      "kind": "room",
+      "roomNumber": "4224"
+    },
+    {
+      "id": "NSH-4-R31",
+      "floorId": "NSH:4",
+      "x": 2149.97,
+      "y": 844.84,
+      "kind": "room",
+      "roomNumber": "4221"
+    },
+    {
+      "id": "NSH-4-R32",
+      "floorId": "NSH:4",
+      "x": 2017.38,
+      "y": 820.28,
+      "kind": "room",
+      "roomNumber": "4223"
+    },
+    {
+      "id": "NSH-4-R33",
+      "floorId": "NSH:4",
+      "x": 1912.61,
+      "y": 864.48,
+      "kind": "room",
+      "roomNumber": "4225"
+    },
+    {
+      "id": "NSH-4-R34",
+      "floorId": "NSH:4",
+      "x": 1776.75,
+      "y": 887.4,
+      "kind": "room",
+      "roomNumber": "4227"
+    },
+    {
+      "id": "NSH-4-R35",
+      "floorId": "NSH:4",
+      "x": 1624.51,
+      "y": 839.93,
+      "kind": "room",
+      "roomNumber": "4229"
+    },
+    {
+      "id": "NSH-4-R36",
+      "floorId": "NSH:4",
+      "x": 1472.27,
+      "y": 864.48,
+      "kind": "room",
+      "roomNumber": "4231"
+    },
+    {
+      "id": "NSH-4-R37",
+      "floorId": "NSH:4",
+      "x": 630.87,
+      "y": 1031.45,
+      "kind": "room",
+      "roomNumber": "4303"
+    },
+    {
+      "id": "NSH-4-R38",
+      "floorId": "NSH:4",
+      "x": 488.46,
+      "y": 1070.74,
+      "kind": "room",
+      "roomNumber": "4305"
+    },
+    {
+      "id": "NSH-4-R39",
+      "floorId": "NSH:4",
+      "x": 1151.43,
+      "y": 1080.56,
+      "kind": "room",
+      "roomNumber": "4306"
+    },
+    {
+      "id": "NSH-4-R40",
+      "floorId": "NSH:4",
+      "x": 1246.37,
+      "y": 1319.55,
+      "kind": "room",
+      "roomNumber": "4501"
+    },
+    {
+      "id": "NSH-4-R41",
+      "floorId": "NSH:4",
+      "x": 1136.69,
+      "y": 1335.92,
+      "kind": "room",
+      "roomNumber": "4503"
+    },
+    {
+      "id": "NSH-4-R42",
+      "floorId": "NSH:4",
+      "x": 1041.75,
+      "y": 1342.47,
+      "kind": "room",
+      "roomNumber": "4505"
+    },
+    {
+      "id": "NSH-4-R43",
+      "floorId": "NSH:4",
+      "x": 930.44,
+      "y": 1349.02,
+      "kind": "room",
+      "roomNumber": "4507"
+    },
+    {
+      "id": "NSH-4-R44",
+      "floorId": "NSH:4",
+      "x": 758.56,
+      "y": 1352.29,
+      "kind": "room",
+      "roomNumber": "4509"
+    },
+    {
+      "id": "NSH-4-R45",
+      "floorId": "NSH:4",
+      "x": 622.69,
+      "y": 1339.2,
+      "kind": "room",
+      "roomNumber": "4511"
+    },
+    {
+      "id": "NSH-4-R46",
+      "floorId": "NSH:4",
+      "x": 481.91,
+      "y": 1352.29,
+      "kind": "room",
+      "roomNumber": "4513"
+    },
+    {
+      "id": "NSH-4-R47",
+      "floorId": "NSH:4",
+      "x": 409.89,
+      "y": 1497.98,
+      "kind": "room",
+      "roomNumber": "4515"
+    },
+    {
+      "id": "NSH-4-R48",
+      "floorId": "NSH:4",
+      "x": 429.53,
+      "y": 1615.84,
+      "kind": "room",
+      "roomNumber": "4517"
+    },
+    {
+      "id": "NSH-4-R49",
+      "floorId": "NSH:4",
+      "x": 436.08,
+      "y": 1802.46,
+      "kind": "room",
+      "roomNumber": "4519"
+    },
+    {
+      "id": "NSH-4-R50",
+      "floorId": "NSH:4",
+      "x": 591.59,
+      "y": 1831.92,
+      "kind": "room",
+      "roomNumber": "4521"
+    },
+    {
+      "id": "NSH-4-R51",
+      "floorId": "NSH:4",
+      "x": 686.53,
+      "y": 1823.74,
+      "kind": "room",
+      "roomNumber": "4523"
+    },
+    {
+      "id": "NSH-4-R52",
+      "floorId": "NSH:4",
+      "x": 781.47,
+      "y": 1827.01,
+      "kind": "room",
+      "roomNumber": "4525"
+    },
+    {
+      "id": "NSH-4-R53",
+      "floorId": "NSH:4",
+      "x": 894.42,
+      "y": 1822.1,
+      "kind": "room",
+      "roomNumber": "4527"
+    },
+    {
+      "id": "NSH-4-R54",
+      "floorId": "NSH:4",
+      "x": 1010.65,
+      "y": 1815.55,
+      "kind": "room",
+      "roomNumber": "4529"
+    },
+    {
+      "id": "NSH-4-R55",
+      "floorId": "NSH:4",
+      "x": 1094.13,
+      "y": 1840.11,
+      "kind": "room",
+      "roomNumber": "4531"
+    },
+    {
+      "id": "NSH-4-R56",
+      "floorId": "NSH:4",
+      "x": 1236.55,
+      "y": 1841.74,
+      "kind": "room",
+      "roomNumber": "4533"
+    },
+    {
+      "id": "NSH-4-R57",
+      "floorId": "NSH:4",
+      "x": 714.36,
+      "y": 1525.81,
+      "kind": "room",
+      "roomNumber": "4508"
+    },
+    {
+      "id": "NSH-4-R58",
+      "floorId": "NSH:4",
+      "x": 850.23,
+      "y": 1535.63,
+      "kind": "room",
+      "roomNumber": "4506"
+    },
+    {
+      "id": "NSH-4-R59",
+      "floorId": "NSH:4",
+      "x": 987.73,
+      "y": 1558.55,
+      "kind": "room",
+      "roomNumber": "4504"
+    },
+    {
+      "id": "NSH-4-R60",
+      "floorId": "NSH:4",
+      "x": 1267.65,
+      "y": 1584.74,
+      "kind": "room",
+      "roomNumber": "4502"
+    },
+    {
+      "id": "NSH-4-R61",
+      "floorId": "NSH:4",
+      "x": 727.46,
+      "y": 1648.58,
+      "kind": "room",
+      "roomNumber": "4522"
+    },
+    {
+      "id": "NSH-4-R62",
+      "floorId": "NSH:4",
+      "x": 861.69,
+      "y": 1646.95,
+      "kind": "room",
+      "roomNumber": "4524"
+    },
+    {
+      "id": "NSH-4-R63",
+      "floorId": "NSH:4",
+      "x": 1843.86,
+      "y": 1324.46,
+      "kind": "room",
+      "roomNumber": "4605"
+    },
+    {
+      "id": "NSH-4-R64",
+      "floorId": "NSH:4",
+      "x": 1946.99,
+      "y": 1349.02,
+      "kind": "room",
+      "roomNumber": "4607"
+    },
+    {
+      "id": "NSH-4-R65",
+      "floorId": "NSH:4",
+      "x": 2056.67,
+      "y": 1353.93,
+      "kind": "room",
+      "roomNumber": "4609"
+    },
+    {
+      "id": "NSH-4-R66",
+      "floorId": "NSH:4",
+      "x": 2172.89,
+      "y": 1355.57,
+      "kind": "room",
+      "roomNumber": "4611"
+    },
+    {
+      "id": "NSH-4-R67",
+      "floorId": "NSH:4",
+      "x": 2343.13,
+      "y": 1280.27,
+      "kind": "room",
+      "roomNumber": "4613"
+    },
+    {
+      "id": "NSH-4-R68",
+      "floorId": "NSH:4",
+      "x": 2310.39,
+      "y": 1367.03,
+      "kind": "room",
+      "roomNumber": "4615"
+    },
+    {
+      "id": "NSH-4-R69",
+      "floorId": "NSH:4",
+      "x": 2330.04,
+      "y": 1496.35,
+      "kind": "room",
+      "roomNumber": "4617"
+    },
+    {
+      "id": "NSH-4-R70",
+      "floorId": "NSH:4",
+      "x": 2334.95,
+      "y": 1620.75,
+      "kind": "room",
+      "roomNumber": "4619"
+    },
+    {
+      "id": "NSH-4-R71",
+      "floorId": "NSH:4",
+      "x": 2254.74,
+      "y": 1840.11,
+      "kind": "room",
+      "roomNumber": "4621"
+    },
+    {
+      "id": "NSH-4-R72",
+      "floorId": "NSH:4",
+      "x": 2125.42,
+      "y": 1805.73,
+      "kind": "room",
+      "roomNumber": "4623"
+    },
+    {
+      "id": "NSH-4-R73",
+      "floorId": "NSH:4",
+      "x": 2012.47,
+      "y": 1823.74,
+      "kind": "room",
+      "roomNumber": "4625"
+    },
+    {
+      "id": "NSH-4-R74",
+      "floorId": "NSH:4",
+      "x": 1917.52,
+      "y": 1823.74,
+      "kind": "room",
+      "roomNumber": "4627"
+    },
+    {
+      "id": "NSH-4-R75",
+      "floorId": "NSH:4",
+      "x": 1809.48,
+      "y": 1827.01,
+      "kind": "room",
+      "roomNumber": "4629"
+    },
+    {
+      "id": "NSH-4-R76",
+      "floorId": "NSH:4",
+      "x": 1688.35,
+      "y": 1822.1,
+      "kind": "room",
+      "roomNumber": "4631"
+    },
+    {
+      "id": "NSH-4-R77",
+      "floorId": "NSH:4",
+      "x": 1603.23,
+      "y": 1633.85,
+      "kind": "room",
+      "roomNumber": "4602"
+    },
+    {
+      "id": "NSH-4-R78",
+      "floorId": "NSH:4",
+      "x": 1955.17,
+      "y": 1548.73,
+      "kind": "room",
+      "roomNumber": "4604"
+    },
+    {
+      "id": "NSH-4-R79",
+      "floorId": "NSH:4",
+      "x": 1770.2,
+      "y": 1553.64,
+      "kind": "room",
+      "roomNumber": "4604A"
+    },
+    {
+      "id": "NSH-4-S01",
+      "floorId": "NSH:4",
+      "x": 2349.68,
+      "y": 702.42,
+      "kind": "stairs"
+    },
+    {
+      "id": "NSH-4-S02",
+      "floorId": "NSH:4",
+      "x": 1033.57,
+      "y": 1190.23,
+      "kind": "stairs"
+    },
+    {
+      "id": "NSH-4-W01",
+      "floorId": "NSH:4",
+      "x": 1544.3,
+      "y": 1332.65,
+      "kind": "restroom"
+    },
+    {
+      "id": "NSH-4-W02",
+      "floorId": "NSH:4",
+      "x": 1714.54,
+      "y": 1335.92,
+      "kind": "restroom"
+    }
+  ],
+  "edges": [
+    {
+      "id": "NSH-4-E01->GHC-4-E01",
+      "from": "NSH-4-E01",
+      "to": "GHC-4-E01",
+      "bidirectional": true,
+      "distanceM": 6.62,
+      "tiredIndex": 1,
+      "wheelchair": false
+    },
+    {
+      "id": "NSH-4-E01->NSH-4-H01",
+      "from": "NSH-4-E01",
+      "to": "NSH-4-H01",
+      "bidirectional": true,
+      "distanceM": 11.33,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H01->NSH-4-H02",
+      "from": "NSH-4-H01",
+      "to": "NSH-4-H02",
+      "bidirectional": true,
+      "distanceM": 24.26,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H02->NSH-4-H03",
+      "from": "NSH-4-H02",
+      "to": "NSH-4-H03",
+      "bidirectional": true,
+      "distanceM": 66.3,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H02->NSH-4-H44",
+      "from": "NSH-4-H02",
+      "to": "NSH-4-H44",
+      "bidirectional": true,
+      "distanceM": 9.01,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H03->NSH-4-H04",
+      "from": "NSH-4-H03",
+      "to": "NSH-4-H04",
+      "bidirectional": true,
+      "distanceM": 18.24,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H03->NSH-4-H52",
+      "from": "NSH-4-H03",
+      "to": "NSH-4-H52",
+      "bidirectional": true,
+      "distanceM": 17.06,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H03->NSH-4-S02",
+      "from": "NSH-4-H03",
+      "to": "NSH-4-S02",
+      "bidirectional": true,
+      "distanceM": 18.92,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H04->NSH-4-H05",
+      "from": "NSH-4-H04",
+      "to": "NSH-4-H05",
+      "bidirectional": true,
+      "distanceM": 22.99,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H04->NSH-4-R39",
+      "from": "NSH-4-H04",
+      "to": "NSH-4-R39",
+      "bidirectional": true,
+      "distanceM": 12.09,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H05->NSH-4-H06",
+      "from": "NSH-4-H05",
+      "to": "NSH-4-H06",
+      "bidirectional": true,
+      "distanceM": 7.19,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H06->NSH-4-H07",
+      "from": "NSH-4-H06",
+      "to": "NSH-4-H07",
+      "bidirectional": true,
+      "distanceM": 7.06,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H06->NSH-4-H09",
+      "from": "NSH-4-H06",
+      "to": "NSH-4-H09",
+      "bidirectional": true,
+      "distanceM": 9.66,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H06->NSH-4-R37",
+      "from": "NSH-4-H06",
+      "to": "NSH-4-R37",
+      "bidirectional": true,
+      "distanceM": 16,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H07->NSH-4-H08",
+      "from": "NSH-4-H07",
+      "to": "NSH-4-H08",
+      "bidirectional": true,
+      "distanceM": 7.86,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H09->NSH-4-H10",
+      "from": "NSH-4-H09",
+      "to": "NSH-4-H10",
+      "bidirectional": true,
+      "distanceM": 4.9,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H10->NSH-4-H11",
+      "from": "NSH-4-H10",
+      "to": "NSH-4-H11",
+      "bidirectional": true,
+      "distanceM": 6.5,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H10->NSH-4-R17",
+      "from": "NSH-4-H10",
+      "to": "NSH-4-R17",
+      "bidirectional": true,
+      "distanceM": 6.36,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H11->NSH-4-H12",
+      "from": "NSH-4-H11",
+      "to": "NSH-4-H12",
+      "bidirectional": true,
+      "distanceM": 11.02,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H11->NSH-4-R09",
+      "from": "NSH-4-H11",
+      "to": "NSH-4-R09",
+      "bidirectional": true,
+      "distanceM": 9.31,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H11->NSH-4-R16",
+      "from": "NSH-4-H11",
+      "to": "NSH-4-R16",
+      "bidirectional": true,
+      "distanceM": 5.44,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H12->NSH-4-H13",
+      "from": "NSH-4-H12",
+      "to": "NSH-4-H13",
+      "bidirectional": true,
+      "distanceM": 8.1,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H12->NSH-4-R15",
+      "from": "NSH-4-H12",
+      "to": "NSH-4-R15",
+      "bidirectional": true,
+      "distanceM": 7.98,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H13->NSH-4-H14",
+      "from": "NSH-4-H13",
+      "to": "NSH-4-H14",
+      "bidirectional": true,
+      "distanceM": 10.28,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H13->NSH-4-R08",
+      "from": "NSH-4-H13",
+      "to": "NSH-4-R08",
+      "bidirectional": true,
+      "distanceM": 12.72,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H13->NSH-4-R14",
+      "from": "NSH-4-H13",
+      "to": "NSH-4-R14",
+      "bidirectional": true,
+      "distanceM": 7.62,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H14->NSH-4-H15",
+      "from": "NSH-4-H14",
+      "to": "NSH-4-H15",
+      "bidirectional": true,
+      "distanceM": 9.44,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H14->NSH-4-R12",
+      "from": "NSH-4-H14",
+      "to": "NSH-4-R12",
+      "bidirectional": true,
+      "distanceM": 12.05,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H14->NSH-4-R13",
+      "from": "NSH-4-H14",
+      "to": "NSH-4-R13",
+      "bidirectional": true,
+      "distanceM": 7.16,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H15->NSH-4-H16",
+      "from": "NSH-4-H15",
+      "to": "NSH-4-H16",
+      "bidirectional": true,
+      "distanceM": 5.79,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H15->NSH-4-R11",
+      "from": "NSH-4-H15",
+      "to": "NSH-4-R11",
+      "bidirectional": true,
+      "distanceM": 8.82,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H16->NSH-4-H17",
+      "from": "NSH-4-H16",
+      "to": "NSH-4-H17",
+      "bidirectional": true,
+      "distanceM": 9.29,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H16->NSH-4-R10",
+      "from": "NSH-4-H16",
+      "to": "NSH-4-R10",
+      "bidirectional": true,
+      "distanceM": 10.79,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H17->NSH-4-H18",
+      "from": "NSH-4-H17",
+      "to": "NSH-4-H18",
+      "bidirectional": true,
+      "distanceM": 10.41,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H17->NSH-4-R01",
+      "from": "NSH-4-H17",
+      "to": "NSH-4-R01",
+      "bidirectional": true,
+      "distanceM": 9.95,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H17->NSH-4-R02",
+      "from": "NSH-4-H17",
+      "to": "NSH-4-R02",
+      "bidirectional": true,
+      "distanceM": 6.76,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H18->NSH-4-H19",
+      "from": "NSH-4-H18",
+      "to": "NSH-4-H19",
+      "bidirectional": true,
+      "distanceM": 9.13,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H18->NSH-4-R03",
+      "from": "NSH-4-H18",
+      "to": "NSH-4-R03",
+      "bidirectional": true,
+      "distanceM": 6.98,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H18->NSH-4-R08",
+      "from": "NSH-4-H18",
+      "to": "NSH-4-R08",
+      "bidirectional": true,
+      "distanceM": 12.89,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H19->NSH-4-H20",
+      "from": "NSH-4-H19",
+      "to": "NSH-4-H20",
+      "bidirectional": true,
+      "distanceM": 5.89,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H19->NSH-4-R04",
+      "from": "NSH-4-H19",
+      "to": "NSH-4-R04",
+      "bidirectional": true,
+      "distanceM": 7.18,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H20->NSH-4-H21",
+      "from": "NSH-4-H20",
+      "to": "NSH-4-H21",
+      "bidirectional": true,
+      "distanceM": 12.24,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H21->NSH-4-H22",
+      "from": "NSH-4-H21",
+      "to": "NSH-4-H22",
+      "bidirectional": true,
+      "distanceM": 5.93,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H22->NSH-4-H23",
+      "from": "NSH-4-H22",
+      "to": "NSH-4-H23",
+      "bidirectional": true,
+      "distanceM": 10.42,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H22->NSH-4-R05",
+      "from": "NSH-4-H22",
+      "to": "NSH-4-R05",
+      "bidirectional": true,
+      "distanceM": 8.9,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H23->NSH-4-H24",
+      "from": "NSH-4-H23",
+      "to": "NSH-4-H24",
+      "bidirectional": true,
+      "distanceM": 12.13,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H23->NSH-4-R06",
+      "from": "NSH-4-H23",
+      "to": "NSH-4-R06",
+      "bidirectional": true,
+      "distanceM": 10.03,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H24->NSH-4-H25",
+      "from": "NSH-4-H24",
+      "to": "NSH-4-H25",
+      "bidirectional": true,
+      "distanceM": 8.34,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H24->NSH-4-R07",
+      "from": "NSH-4-H24",
+      "to": "NSH-4-R07",
+      "bidirectional": true,
+      "distanceM": 6.59,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H25->NSH-4-H26",
+      "from": "NSH-4-H25",
+      "to": "NSH-4-H26",
+      "bidirectional": true,
+      "distanceM": 7.56,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H25->NSH-4-R20",
+      "from": "NSH-4-H25",
+      "to": "NSH-4-R20",
+      "bidirectional": true,
+      "distanceM": 16.17,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H26->NSH-4-H27",
+      "from": "NSH-4-H26",
+      "to": "NSH-4-H27",
+      "bidirectional": true,
+      "distanceM": 7.28,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H27->NSH-4-H28",
+      "from": "NSH-4-H27",
+      "to": "NSH-4-H28",
+      "bidirectional": true,
+      "distanceM": 8.55,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H27->NSH-4-H30",
+      "from": "NSH-4-H27",
+      "to": "NSH-4-H30",
+      "bidirectional": true,
+      "distanceM": 13.29,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H28->NSH-4-H29",
+      "from": "NSH-4-H28",
+      "to": "NSH-4-H29",
+      "bidirectional": true,
+      "distanceM": 12.48,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H28->NSH-4-R19",
+      "from": "NSH-4-H28",
+      "to": "NSH-4-R19",
+      "bidirectional": true,
+      "distanceM": 7.05,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H29->NSH-4-H10",
+      "from": "NSH-4-H29",
+      "to": "NSH-4-H10",
+      "bidirectional": true,
+      "distanceM": 7.52,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H29->NSH-4-R18",
+      "from": "NSH-4-H29",
+      "to": "NSH-4-R18",
+      "bidirectional": true,
+      "distanceM": 6.47,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H30->NSH-4-H31",
+      "from": "NSH-4-H30",
+      "to": "NSH-4-H31",
+      "bidirectional": true,
+      "distanceM": 11.7,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H30->NSH-4-R36",
+      "from": "NSH-4-H30",
+      "to": "NSH-4-R36",
+      "bidirectional": true,
+      "distanceM": 7.19,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H31->NSH-4-H32",
+      "from": "NSH-4-H31",
+      "to": "NSH-4-H32",
+      "bidirectional": true,
+      "distanceM": 10.08,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H31->NSH-4-R21",
+      "from": "NSH-4-H31",
+      "to": "NSH-4-R21",
+      "bidirectional": true,
+      "distanceM": 9.97,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H31->NSH-4-R35",
+      "from": "NSH-4-H31",
+      "to": "NSH-4-R35",
+      "bidirectional": true,
+      "distanceM": 6.36,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H32->NSH-4-H33",
+      "from": "NSH-4-H32",
+      "to": "NSH-4-H33",
+      "bidirectional": true,
+      "distanceM": 9.76,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H32->NSH-4-H43",
+      "from": "NSH-4-H32",
+      "to": "NSH-4-H43",
+      "bidirectional": true,
+      "distanceM": 9.14,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H32->NSH-4-R34",
+      "from": "NSH-4-H32",
+      "to": "NSH-4-R34",
+      "bidirectional": true,
+      "distanceM": 8.91,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H33->NSH-4-H34",
+      "from": "NSH-4-H33",
+      "to": "NSH-4-H34",
+      "bidirectional": true,
+      "distanceM": 7.88,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H33->NSH-4-R33",
+      "from": "NSH-4-H33",
+      "to": "NSH-4-R33",
+      "bidirectional": true,
+      "distanceM": 8.32,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H34->NSH-4-H35",
+      "from": "NSH-4-H34",
+      "to": "NSH-4-H35",
+      "bidirectional": true,
+      "distanceM": 8.08,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H34->NSH-4-R30",
+      "from": "NSH-4-H34",
+      "to": "NSH-4-R30",
+      "bidirectional": true,
+      "distanceM": 6.21,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H34->NSH-4-R32",
+      "from": "NSH-4-H34",
+      "to": "NSH-4-R32",
+      "bidirectional": true,
+      "distanceM": 5.89,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H35->NSH-4-H36",
+      "from": "NSH-4-H35",
+      "to": "NSH-4-H36",
+      "bidirectional": true,
+      "distanceM": 7.44,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H35->NSH-4-R29",
+      "from": "NSH-4-H35",
+      "to": "NSH-4-R29",
+      "bidirectional": true,
+      "distanceM": 6.17,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H35->NSH-4-R31",
+      "from": "NSH-4-H35",
+      "to": "NSH-4-R31",
+      "bidirectional": true,
+      "distanceM": 7.71,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H36->NSH-4-H37",
+      "from": "NSH-4-H36",
+      "to": "NSH-4-H37",
+      "bidirectional": true,
+      "distanceM": 12.15,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H36->NSH-4-S01",
+      "from": "NSH-4-H36",
+      "to": "NSH-4-S01",
+      "bidirectional": true,
+      "distanceM": 8.02,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H37->NSH-4-H38",
+      "from": "NSH-4-H37",
+      "to": "NSH-4-H38",
+      "bidirectional": true,
+      "distanceM": 11.49,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H37->NSH-4-R27",
+      "from": "NSH-4-H37",
+      "to": "NSH-4-R27",
+      "bidirectional": true,
+      "distanceM": 5.13,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H38->NSH-4-H39",
+      "from": "NSH-4-H38",
+      "to": "NSH-4-H39",
+      "bidirectional": true,
+      "distanceM": 8.17,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H38->NSH-4-R25",
+      "from": "NSH-4-H38",
+      "to": "NSH-4-R25",
+      "bidirectional": true,
+      "distanceM": 8.41,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H38->NSH-4-R26",
+      "from": "NSH-4-H38",
+      "to": "NSH-4-R26",
+      "bidirectional": true,
+      "distanceM": 8.01,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H39->NSH-4-H40",
+      "from": "NSH-4-H39",
+      "to": "NSH-4-H40",
+      "bidirectional": true,
+      "distanceM": 8.91,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H39->NSH-4-R24",
+      "from": "NSH-4-H39",
+      "to": "NSH-4-R24",
+      "bidirectional": true,
+      "distanceM": 5.74,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H40->NSH-4-H41",
+      "from": "NSH-4-H40",
+      "to": "NSH-4-H41",
+      "bidirectional": true,
+      "distanceM": 7.94,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H40->NSH-4-R23",
+      "from": "NSH-4-H40",
+      "to": "NSH-4-R23",
+      "bidirectional": true,
+      "distanceM": 7.09,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H40->NSH-4-R28",
+      "from": "NSH-4-H40",
+      "to": "NSH-4-R28",
+      "bidirectional": true,
+      "distanceM": 9.65,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H41->NSH-4-H42",
+      "from": "NSH-4-H41",
+      "to": "NSH-4-H42",
+      "bidirectional": true,
+      "distanceM": 6.93,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H41->NSH-4-R22",
+      "from": "NSH-4-H41",
+      "to": "NSH-4-R22",
+      "bidirectional": true,
+      "distanceM": 8.47,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H42->NSH-4-H43",
+      "from": "NSH-4-H42",
+      "to": "NSH-4-H43",
+      "bidirectional": true,
+      "distanceM": 11.02,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H44->NSH-4-H45",
+      "from": "NSH-4-H44",
+      "to": "NSH-4-H45",
+      "bidirectional": true,
+      "distanceM": 8.2,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H44->NSH-4-R67",
+      "from": "NSH-4-H44",
+      "to": "NSH-4-R67",
+      "bidirectional": true,
+      "distanceM": 8.34,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H44->NSH-4-R68",
+      "from": "NSH-4-H44",
+      "to": "NSH-4-R68",
+      "bidirectional": true,
+      "distanceM": 5.19,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H45->NSH-4-H46",
+      "from": "NSH-4-H45",
+      "to": "NSH-4-H46",
+      "bidirectional": true,
+      "distanceM": 7.82,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H45->NSH-4-H53",
+      "from": "NSH-4-H45",
+      "to": "NSH-4-H53",
+      "bidirectional": true,
+      "distanceM": 11.09,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H45->NSH-4-R69",
+      "from": "NSH-4-H45",
+      "to": "NSH-4-R69",
+      "bidirectional": true,
+      "distanceM": 6.72,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H46->NSH-4-H47",
+      "from": "NSH-4-H46",
+      "to": "NSH-4-H47",
+      "bidirectional": true,
+      "distanceM": 6.82,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H46->NSH-4-R66",
+      "from": "NSH-4-H46",
+      "to": "NSH-4-R66",
+      "bidirectional": true,
+      "distanceM": 6.61,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H47->NSH-4-H48",
+      "from": "NSH-4-H47",
+      "to": "NSH-4-H48",
+      "bidirectional": true,
+      "distanceM": 7.85,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H47->NSH-4-R65",
+      "from": "NSH-4-H47",
+      "to": "NSH-4-R65",
+      "bidirectional": true,
+      "distanceM": 6.05,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H48->NSH-4-H49",
+      "from": "NSH-4-H48",
+      "to": "NSH-4-H49",
+      "bidirectional": true,
+      "distanceM": 7.39,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H48->NSH-4-R64",
+      "from": "NSH-4-H48",
+      "to": "NSH-4-R64",
+      "bidirectional": true,
+      "distanceM": 6.53,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H48->NSH-4-R78",
+      "from": "NSH-4-H48",
+      "to": "NSH-4-R78",
+      "bidirectional": true,
+      "distanceM": 8.01,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H49->NSH-4-H50",
+      "from": "NSH-4-H49",
+      "to": "NSH-4-H50",
+      "bidirectional": true,
+      "distanceM": 11.44,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H49->NSH-4-R63",
+      "from": "NSH-4-H49",
+      "to": "NSH-4-R63",
+      "bidirectional": true,
+      "distanceM": 8.13,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H50->NSH-4-H51",
+      "from": "NSH-4-H50",
+      "to": "NSH-4-H51",
+      "bidirectional": true,
+      "distanceM": 10.39,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H50->NSH-4-R77",
+      "from": "NSH-4-H50",
+      "to": "NSH-4-R77",
+      "bidirectional": true,
+      "distanceM": 13.96,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H50->NSH-4-W01",
+      "from": "NSH-4-H50",
+      "to": "NSH-4-W01",
+      "bidirectional": true,
+      "distanceM": 11.27,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H50->NSH-4-W02",
+      "from": "NSH-4-H50",
+      "to": "NSH-4-W02",
+      "bidirectional": true,
+      "distanceM": 8.57,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H51->NSH-4-H52",
+      "from": "NSH-4-H51",
+      "to": "NSH-4-H52",
+      "bidirectional": true,
+      "distanceM": 9.82,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H53->NSH-4-H54",
+      "from": "NSH-4-H53",
+      "to": "NSH-4-H54",
+      "bidirectional": true,
+      "distanceM": 8.66,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H53->NSH-4-R70",
+      "from": "NSH-4-H53",
+      "to": "NSH-4-R70",
+      "bidirectional": true,
+      "distanceM": 6.37,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H54->NSH-4-H55",
+      "from": "NSH-4-H54",
+      "to": "NSH-4-H55",
+      "bidirectional": true,
+      "distanceM": 11.36,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H54->NSH-4-R71",
+      "from": "NSH-4-H54",
+      "to": "NSH-4-R71",
+      "bidirectional": true,
+      "distanceM": 7.32,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H55->NSH-4-H56",
+      "from": "NSH-4-H55",
+      "to": "NSH-4-H56",
+      "bidirectional": true,
+      "distanceM": 5.9,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H55->NSH-4-R72",
+      "from": "NSH-4-H55",
+      "to": "NSH-4-R72",
+      "bidirectional": true,
+      "distanceM": 6.51,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H56->NSH-4-H57",
+      "from": "NSH-4-H56",
+      "to": "NSH-4-H57",
+      "bidirectional": true,
+      "distanceM": 10.42,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H56->NSH-4-R73",
+      "from": "NSH-4-H56",
+      "to": "NSH-4-R73",
+      "bidirectional": true,
+      "distanceM": 7.45,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H56->NSH-4-R74",
+      "from": "NSH-4-H56",
+      "to": "NSH-4-R74",
+      "bidirectional": true,
+      "distanceM": 9.38,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H57->NSH-4-H58",
+      "from": "NSH-4-H57",
+      "to": "NSH-4-H58",
+      "bidirectional": true,
+      "distanceM": 6.93,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H57->NSH-4-R75",
+      "from": "NSH-4-H57",
+      "to": "NSH-4-R75",
+      "bidirectional": true,
+      "distanceM": 7.55,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H58->NSH-4-H59",
+      "from": "NSH-4-H58",
+      "to": "NSH-4-H59",
+      "bidirectional": true,
+      "distanceM": 21.6,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H58->NSH-4-R76",
+      "from": "NSH-4-H58",
+      "to": "NSH-4-R76",
+      "bidirectional": true,
+      "distanceM": 8.04,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H59->NSH-4-E02",
+      "from": "NSH-4-H59",
+      "to": "NSH-4-E02",
+      "bidirectional": true,
+      "distanceM": 15.78,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H59->NSH-4-H60",
+      "from": "NSH-4-H59",
+      "to": "NSH-4-H60",
+      "bidirectional": true,
+      "distanceM": 13.64,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H60->NSH-4-H61",
+      "from": "NSH-4-H60",
+      "to": "NSH-4-H61",
+      "bidirectional": true,
+      "distanceM": 9.49,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H60->NSH-4-R56",
+      "from": "NSH-4-H60",
+      "to": "NSH-4-R56",
+      "bidirectional": true,
+      "distanceM": 8.41,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H60->NSH-4-R60",
+      "from": "NSH-4-H60",
+      "to": "NSH-4-R60",
+      "bidirectional": true,
+      "distanceM": 9.86,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H61->NSH-4-H62",
+      "from": "NSH-4-H61",
+      "to": "NSH-4-H62",
+      "bidirectional": true,
+      "distanceM": 14.67,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H61->NSH-4-R55",
+      "from": "NSH-4-H61",
+      "to": "NSH-4-R55",
+      "bidirectional": true,
+      "distanceM": 8.97,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H62->NSH-4-H63",
+      "from": "NSH-4-H62",
+      "to": "NSH-4-H63",
+      "bidirectional": true,
+      "distanceM": 9.47,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H62->NSH-4-R53",
+      "from": "NSH-4-H62",
+      "to": "NSH-4-R53",
+      "bidirectional": true,
+      "distanceM": 7.39,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H62->NSH-4-R54",
+      "from": "NSH-4-H62",
+      "to": "NSH-4-R54",
+      "bidirectional": true,
+      "distanceM": 9.72,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H62->NSH-4-R62",
+      "from": "NSH-4-H62",
+      "to": "NSH-4-R62",
+      "bidirectional": true,
+      "distanceM": 6.22,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H63->NSH-4-H64",
+      "from": "NSH-4-H63",
+      "to": "NSH-4-H64",
+      "bidirectional": true,
+      "distanceM": 16.4,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H63->NSH-4-R51",
+      "from": "NSH-4-H63",
+      "to": "NSH-4-R51",
+      "bidirectional": true,
+      "distanceM": 10,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H63->NSH-4-R52",
+      "from": "NSH-4-H63",
+      "to": "NSH-4-R52",
+      "bidirectional": true,
+      "distanceM": 7.86,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H63->NSH-4-R61",
+      "from": "NSH-4-H63",
+      "to": "NSH-4-R61",
+      "bidirectional": true,
+      "distanceM": 5.94,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H64->NSH-4-H65",
+      "from": "NSH-4-H64",
+      "to": "NSH-4-H65",
+      "bidirectional": true,
+      "distanceM": 10.52,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H64->NSH-4-R49",
+      "from": "NSH-4-H64",
+      "to": "NSH-4-R49",
+      "bidirectional": true,
+      "distanceM": 9.66,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H64->NSH-4-R50",
+      "from": "NSH-4-H64",
+      "to": "NSH-4-R50",
+      "bidirectional": true,
+      "distanceM": 8.49,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H65->NSH-4-H66",
+      "from": "NSH-4-H65",
+      "to": "NSH-4-H66",
+      "bidirectional": true,
+      "distanceM": 9.2,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H65->NSH-4-R48",
+      "from": "NSH-4-H65",
+      "to": "NSH-4-R48",
+      "bidirectional": true,
+      "distanceM": 8.45,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H66->NSH-4-H67",
+      "from": "NSH-4-H66",
+      "to": "NSH-4-H67",
+      "bidirectional": true,
+      "distanceM": 11,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H66->NSH-4-R46",
+      "from": "NSH-4-H66",
+      "to": "NSH-4-R46",
+      "bidirectional": true,
+      "distanceM": 8.28,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H66->NSH-4-R47",
+      "from": "NSH-4-H66",
+      "to": "NSH-4-R47",
+      "bidirectional": true,
+      "distanceM": 11.11,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H67->NSH-4-H68",
+      "from": "NSH-4-H67",
+      "to": "NSH-4-H68",
+      "bidirectional": true,
+      "distanceM": 15.95,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H67->NSH-4-R44",
+      "from": "NSH-4-H67",
+      "to": "NSH-4-R44",
+      "bidirectional": true,
+      "distanceM": 6.42,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H67->NSH-4-R45",
+      "from": "NSH-4-H67",
+      "to": "NSH-4-R45",
+      "bidirectional": true,
+      "distanceM": 9.07,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H67->NSH-4-R57",
+      "from": "NSH-4-H67",
+      "to": "NSH-4-R57",
+      "bidirectional": true,
+      "distanceM": 6.7,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H68->NSH-4-H69",
+      "from": "NSH-4-H68",
+      "to": "NSH-4-H69",
+      "bidirectional": true,
+      "distanceM": 18.37,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H68->NSH-4-R42",
+      "from": "NSH-4-H68",
+      "to": "NSH-4-R42",
+      "bidirectional": true,
+      "distanceM": 10.05,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H68->NSH-4-R43",
+      "from": "NSH-4-H68",
+      "to": "NSH-4-R43",
+      "bidirectional": true,
+      "distanceM": 6.49,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H68->NSH-4-R58",
+      "from": "NSH-4-H68",
+      "to": "NSH-4-R58",
+      "bidirectional": true,
+      "distanceM": 9.15,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H68->NSH-4-R59",
+      "from": "NSH-4-H68",
+      "to": "NSH-4-R59",
+      "bidirectional": true,
+      "distanceM": 9.01,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H69->NSH-4-H52",
+      "from": "NSH-4-H69",
+      "to": "NSH-4-H52",
+      "bidirectional": true,
+      "distanceM": 12.28,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H69->NSH-4-R40",
+      "from": "NSH-4-H69",
+      "to": "NSH-4-R40",
+      "bidirectional": true,
+      "distanceM": 8.75,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-H69->NSH-4-R41",
+      "from": "NSH-4-H69",
+      "to": "NSH-4-R41",
+      "bidirectional": true,
+      "distanceM": 8.2,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-R08->NSH-4-H12",
+      "from": "NSH-4-R08",
+      "to": "NSH-4-H12",
+      "bidirectional": true,
+      "distanceM": 13.52,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-R08->NSH-4-H19",
+      "from": "NSH-4-R08",
+      "to": "NSH-4-H19",
+      "bidirectional": true,
+      "distanceM": 14.11,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-R37->NSH-4-R38",
+      "from": "NSH-4-R37",
+      "to": "NSH-4-R38",
+      "bidirectional": true,
+      "distanceM": 10.42,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "NSH-4-R78->NSH-4-R79",
+      "from": "NSH-4-R78",
+      "to": "NSH-4-R79",
+      "bidirectional": true,
+      "distanceM": 13.06,
+      "tiredIndex": 1,
+      "wheelchair": true
+    }
+  ]
+}

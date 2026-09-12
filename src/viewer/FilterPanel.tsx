@@ -26,11 +26,15 @@ const PRESETS: Preset[] = [
   },
   {
     name: 'Wheelchair',
-    hint: 'Only step-free edges',
+    hint: 'Only edges marked step-free',
     options: {
       tirednessWeight: 0.5,
       requireWheelchair: true,
-      avoidStairs: true,
+      // Deliberately NOT avoidStairs. Accessibility is a hand-entered fact about each
+      // edge, and this preset honours exactly that. Adding a kind-based filter on top
+      // made the route depend on the kind being right, which is how a flat doorway
+      // between two buildings managed to exclude itself from step-free routing.
+      avoidStairs: false,
       avoidElevators: false,
     },
   },

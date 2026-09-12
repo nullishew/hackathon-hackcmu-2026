@@ -10,7 +10,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FloorCanvas, type RenderEdge } from '../floor2d/FloorCanvas'
 import { useViewport, type Point } from '../floor2d/useViewport'
-import { inferEdgeKind } from '../model/edges'
+import { edgeKind } from '../model/edges'
 import { calibrationFromReferenceLine } from '../model/geometry'
 import {
   findFloor,
@@ -102,7 +102,7 @@ export function EntryScreen() {
       const to = project.nodes[edge.to]
       if (!from || !to) continue
       if (from.floorId !== floorId && to.floorId !== floorId) continue
-      out.push({ edge, from, to, kind: inferEdgeKind(from, to) })
+      out.push({ edge, from, to, kind: edgeKind(edge) })
     }
     return out
   }, [project.edges, project.nodes, floorId])

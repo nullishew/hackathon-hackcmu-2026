@@ -7,9 +7,22 @@
  */
 import { useMemo, useState } from 'react'
 import { suggestDistanceM } from '../model/autoDistance'
-import { TIRED_INDEX, edgeKind, estimateSeconds, formatDuration } from '../model/edges'
+import {
+  TIRED_INDEX,
+  defaultTiredIndex,
+  defaultWheelchair,
+  edgeKind,
+  estimateSeconds,
+  formatDuration,
+} from '../model/edges'
 import { createLabeler } from '../model/labels'
-import { NodeKind, buildingOfFloor, findFloor, type Project } from '../model/types'
+import {
+  EdgeKind,
+  NodeKind,
+  buildingOfFloor,
+  findFloor,
+  type Project,
+} from '../model/types'
 import { useProjectStore } from '../state/projectStore'
 
 const NODE_KINDS = NodeKind.options
@@ -195,8 +208,8 @@ function EdgeEditor({ edgeId, project }: { edgeId: string; project: Project }) {
   const labeler = useMemo(() => createLabeler(project), [project])
   const from = project.nodes[edge.from]
   const to = project.nodes[edge.to]
-  const kind = edgeKind(project, edge) ?? 'walk'
-  const suggestion = from && to ? suggestDistanceM(project, from, to) : null
+  const kind = edgeKind(edge)
+  const suggestion = from && to ? suggestDistanceM(project, from, to, kind) : null
   const overridden =
     suggestion !== null && Math.abs(suggestion.distanceM - edge.distanceM) > 0.05
 
@@ -206,10 +219,26 @@ function EdgeEditor({ edgeId, project }: { edgeId: string; project: Project }) {
         <h3>
           {from ? labeler.shortLabelFor(from) : edge.from} → {to ? labeler.shortLabelFor(to) : edge.to}
         </h3>
-        <code>
-          {kind} · derived from the two point kinds
-        </code>
+        <code>{edge.id}</code>
       </header>
+
+      <label>
+        Kind
+        <select
+          value={edge.kind}
+          onChange={(e) => updateEdge(edgeId, { kind: e.target.value as EdgeKind })}
+        >
+          {EdgeKind.options.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
+        </select>
+      </label>
+      <p className="hint">
+        Entered by hand, never guessed from the floors. A doorway between two buildings is a
+        walk even though the floors differ.
+      </p>
 
       <label>
         Distance (m)
@@ -259,6 +288,24 @@ function EdgeEditor({ edgeId, project }: { edgeId: string; project: Project }) {
           </button>
         ))}
       </div>
+      {(edge.tiredIndex !== defaultTiredIndex(kind) ||
+        edge.wheelchair !== defaultWheelchair(kind)) && (
+        <p className="hint">
+          <button
+            type="button"
+            className="link"
+            onClick={() =>
+              updateEdge(edgeId, {
+                tiredIndex: defaultTiredIndex(kind),
+                wheelchair: defaultWheelchair(kind),
+              })
+            }
+          >
+            Use the usual values for {kind}
+          </button>{' '}
+          (tiredness {defaultTiredIndex(kind)}, {defaultWheelchair(kind) ? 'accessible' : 'not accessible'})
+        </p>
+      )}
 
       <label className="check">
         <input
@@ -346,6 +393,24 @@ function BulkEditor({ nodeIds, edgeIds }: { nodeIds: string[]; edgeIds: string[]
               Mark inaccessible
             </button>
           </div>
+          <label>
+            Set all kinds to
+            <select
+              defaultValue=""
+              onChange={(e) => {
+                if (!e.target.value) return
+                for (const id of edgeIds) updateEdge(id, { kind: e.target.value as EdgeKind })
+                e.target.value = ''
+              }}
+            >
+              <option value="">— choose —</option>
+              {EdgeKind.options.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </label>
           <label>
             Set all tired indexes to
             <select

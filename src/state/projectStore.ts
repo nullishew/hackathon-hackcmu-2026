@@ -10,7 +10,7 @@
  */
 import { create } from 'zustand'
 import { suggestDistanceM } from '../model/autoDistance'
-import { defaultTiredIndex, defaultWheelchair, inferEdgeKind } from '../model/edges'
+import { defaultTiredIndex, defaultWheelchair } from '../model/edges'
 import { findExistingEdge, makeEdgeId, nextNodeId } from '../model/ids'
 import {
   buildingOfFloor,
@@ -19,6 +19,7 @@ import {
   type Building,
   type Calibration,
   type Feature,
+  type EdgeKind,
   type Floor,
   type GraphEdge,
   type GraphNode,
@@ -188,7 +189,7 @@ export const useProjectStore = create<ProjectState>((set, get) => {
       const from = project.nodes[edge.from]
       const to = project.nodes[edge.to]
       if (!from || !to) continue
-      const suggestion = suggestDistanceM(project, from, to)
+      const suggestion = suggestDistanceM(project, from, to, edge.kind)
       if (suggestion) {
         project.edges[edge.id] = { ...edge, distanceM: round2(suggestion.distanceM) }
       }
@@ -301,23 +302,9 @@ export const useProjectStore = create<ProjectState>((set, get) => {
       pushHistory()
       const project = snapshot(get().project)
       project.nodes[nodeId] = { ...existing, ...patch, id: nodeId, floorId: existing.floorId }
-      // Changing a node's kind can change what its edges are, so re-derive them.
-      if (patch.kind && patch.kind !== existing.kind) {
-        for (const edge of Object.values(project.edges)) {
-          if (edge.from !== nodeId && edge.to !== nodeId) continue
-          const from = project.nodes[edge.from]
-          const to = project.nodes[edge.to]
-          if (!from || !to) continue
-          const kind = inferEdgeKind(from, to)
-          const suggestion = suggestDistanceM(project, from, to)
-          project.edges[edge.id] = {
-            ...edge,
-            distanceM: suggestion ? round2(suggestion.distanceM) : edge.distanceM,
-            tiredIndex: defaultTiredIndex(kind),
-            wheelchair: defaultWheelchair(kind),
-          }
-        }
-      }
+      // Deliberately does NOT touch the edges. An edge's kind, tiredness and accessibility
+      // are entered by hand, and silently rewriting them when a node is reclassified would
+      // throw away those corrections.
       set({ project })
       markFloorDirty(existing.floorId)
     },
@@ -356,14 +343,17 @@ export const useProjectStore = create<ProjectState>((set, get) => {
 
       pushHistory()
       const project = snapshot(current)
-      const kind = inferEdgeKind(from, to)
-      const suggestion = suggestDistanceM(project, from, to)
+      // New edges start as a level walk — the overwhelming majority are — and the kind is
+      // then set by hand in the inspector. Nothing guesses it from the two floors.
+      const kind: EdgeKind = 'walk'
+      const suggestion = suggestDistanceM(project, from, to, kind)
       const id = makeEdgeId(fromId, toId)
       project.edges[id] = {
         id,
         from: fromId,
         to: toId,
         bidirectional: true,
+        kind,
         distanceM: suggestion ? round2(suggestion.distanceM) : 0,
         tiredIndex: defaultTiredIndex(kind),
         wheelchair: defaultWheelchair(kind),
@@ -408,7 +398,7 @@ export const useProjectStore = create<ProjectState>((set, get) => {
       const from = current.nodes[edge.from]
       const to = current.nodes[edge.to]
       if (!from || !to) return
-      const suggestion = suggestDistanceM(current, from, to)
+      const suggestion = suggestDistanceM(current, from, to, edge.kind)
       if (!suggestion) return
       get().updateEdge(edgeId, { distanceM: round2(suggestion.distanceM) })
     },
@@ -457,14 +447,21 @@ export const useProjectStore = create<ProjectState>((set, get) => {
         const b = idOnFloor.get(floors[i + 1].id)
         if (!a || !b) continue
         if (findExistingEdge(project, a, b)) continue
-        const kind = inferEdgeKind(project.nodes[a], project.nodes[b])
-        const suggestion = suggestDistanceM(project, project.nodes[a], project.nodes[b])
+        // Not an inference: you selected a stairs/elevator node and asked to extend it
+        // through floors, so the edges this builds are that kind by your instruction.
+        // Anything else starts as a walk and is set by hand.
+        const kind: EdgeKind =
+          source.kind === 'stairs' || source.kind === 'elevator' || source.kind === 'ramp'
+            ? source.kind
+            : 'walk'
+        const suggestion = suggestDistanceM(project, project.nodes[a], project.nodes[b], kind)
         const id = makeEdgeId(a, b)
         project.edges[id] = {
           id,
           from: a,
           to: b,
           bidirectional: true,
+          kind,
           distanceM: suggestion ? round2(suggestion.distanceM) : 0,
           tiredIndex: defaultTiredIndex(kind),
           wheelchair: defaultWheelchair(kind),

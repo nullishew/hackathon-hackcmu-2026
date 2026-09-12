@@ -78,6 +78,22 @@ export function validateProject(project: Project): Issue[] {
     })
   }
 
+  // --- accessibility that contradicts the edge kind --------------------
+  // Step-free routing trusts the wheelchair flag and nothing else, which is right: it is
+  // the fact a human entered. That makes a staircase marked accessible actively dangerous
+  // rather than merely odd, so say so here instead of second-guessing it at route time.
+  const stairsMarkedAccessible = edges.filter((e) => e.kind === 'stairs' && e.wheelchair)
+  if (stairsMarkedAccessible.length > 0) {
+    issues.push({
+      severity: 'error',
+      kind: 'stairs-marked-accessible',
+      message:
+        `${stairsMarkedAccessible.length} stairs edge${stairsMarkedAccessible.length === 1 ? '' : 's'} ` +
+        `marked wheelchair accessible — step-free routes will send people up them.`,
+      nodeIds: stairsMarkedAccessible.flatMap((e) => [e.from, e.to]),
+    })
+  }
+
   // --- points outside their plan image --------------------------------
   const outOfBounds = nodes.filter((n) => {
     const image = findFloor(project, n.floorId)?.image

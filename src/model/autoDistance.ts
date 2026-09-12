@@ -9,9 +9,8 @@
  * Real flights cover roughly two metres of tread per metre of rise, plus landings, so we
  * estimate the run instead of believing the stacked coordinates.
  */
-import { inferEdgeKind } from './edges'
 import { worldPosition } from './geometry'
-import type { GraphNode, Project } from './types'
+import type { EdgeKind, GraphNode, Project } from './types'
 
 /**
  * Horizontal run per metre of rise on a staircase. A 7in riser with an 11in tread is
@@ -34,6 +33,8 @@ export function suggestDistanceM(
   project: Project,
   a: GraphNode,
   b: GraphNode,
+  /** The edge's kind, which the caller already knows — it is never guessed here. */
+  kind: EdgeKind,
 ): DistanceSuggestion | null {
   const pa = worldPosition(project, a)
   const pb = worldPosition(project, b)
@@ -42,7 +43,6 @@ export function suggestDistanceM(
   const horizontal = Math.hypot(pb.x - pa.x, pb.z - pa.z)
   const rise = Math.abs(pb.y - pa.y)
   const geometric = Math.hypot(horizontal, rise)
-  const kind = inferEdgeKind(a, b)
 
   if (kind === 'elevator') {
     // A shaft really is a vertical line; the rise is the honest distance.

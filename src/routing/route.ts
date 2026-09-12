@@ -11,6 +11,7 @@
  * exactly what the 2D drill-down renders and what the 3D view highlights.
  */
 import { edgeCost, edgeKind, edgeTiredness, estimateSeconds, type EdgeKind } from '../model/edges'
+import { findFloor } from '../model/types'
 import type { GraphEdge, GraphNode, Project } from '../model/types'
 import { MinHeap } from './heap'
 
@@ -36,8 +37,17 @@ export interface RouteStep {
   to: GraphNode
   distanceM: number
   seconds: number
-  /** Set when this step changes floors. */
+  /**
+   * Set when the step moves to a different floor plan. Drives leg splitting, since each
+   * leg renders exactly one plan — true even for a doorway into another building.
+   */
   changesFloor: boolean
+  /**
+   * Set when the step actually changes height. Unlike `changesFloor` this is geometric:
+   * Gates 4 and NSH 4 are different plans at the same elevation, so crossing between them
+   * changes floor but not level.
+   */
+  changesLevel: boolean
 }
 
 export interface RouteLeg {
@@ -62,6 +72,7 @@ export interface Route {
   cost: number
   /** Total tiredIndex * distance, independent of W. */
   tiredness: number
+  /** How many times the route actually changes height. */
   floorChanges: number
   stairsCount: number
   elevatorCount: number
@@ -95,8 +106,9 @@ function buildAdjacency(project: Project, options: RouteOptions): Map<string, Ar
   }
 
   for (const edge of Object.values(project.edges)) {
-    const kind = edgeKind(project, edge)
-    if (!kind) continue // dangling endpoint; validation reports these separately
+    // A dangling endpoint cannot be traversed; validation reports those separately.
+    if (!project.nodes[edge.from] || !project.nodes[edge.to]) continue
+    const kind = edgeKind(edge)
 
     if (options.requireWheelchair && !edge.wheelchair) continue
     if (options.avoidStairs && kind === 'stairs') continue
@@ -167,6 +179,10 @@ function describeUnreachable(options: RouteOptions): string {
     : 'No route exists between these two points — the graph is disconnected here.'
 }
 
+function elevationOf(project: Project, node: GraphNode): number {
+  return findFloor(project, node.floorId)?.elevationM ?? 0
+}
+
 function assembleRoute(
   project: Project,
   fromId: string,
@@ -189,6 +205,7 @@ function assembleRoute(
       distanceM: arc.edge.distanceM,
       seconds: estimateSeconds(arc.edge.distanceM, arc.kind),
       changesFloor: from.floorId !== to.floorId,
+      changesLevel: elevationOf(project, from) !== elevationOf(project, to),
     })
     cursor = arc.from
   }
@@ -219,7 +236,7 @@ function assembleRoute(
     seconds,
     cost: totalCost,
     tiredness,
-    floorChanges: steps.filter((s) => s.changesFloor).length,
+    floorChanges: steps.filter((s) => s.changesLevel).length,
     stairsCount,
     elevatorCount,
   }

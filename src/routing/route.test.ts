@@ -94,6 +94,54 @@ describe('hard filters', () => {
   })
 })
 
+describe('step-free routing reads the wheelchair flag and nothing else', () => {
+  /**
+   * The real failure this guards against: a flat doorway between two buildings was
+   * classified as stairs, and the Wheelchair preset also filtered on kind, so step-free
+   * routing refused to cross between Gates and Newell-Simon. Accessibility is a
+   * hand-entered fact, so the filter must honour it even when the kind is wrong.
+   */
+  it('uses an edge marked accessible even if its kind says stairs', () => {
+    const local = gatesFixture()
+    const edge = local.edges['GHC-4-S01->GHC-5-S01']
+    // Deliberately contradictory, standing in for a mislabelled cross-building seam.
+    local.edges[edge.id] = { ...edge, kind: 'stairs', wheelchair: true }
+
+    const result = findRoute(local, 'GHC-4-S01', 'GHC-5-S01', {
+      ...defaultRouteOptions,
+      requireWheelchair: true,
+    })
+    expect(result.ok).toBe(true)
+    if (result.ok) expect(result.route.steps).toHaveLength(1)
+  })
+
+  it('still refuses an edge marked inaccessible, whatever its kind says', () => {
+    const local = gatesFixture()
+    const edge = local.edges['GHC-4-H01->GHC-4-H02']
+    local.edges[edge.id] = { ...edge, kind: 'walk', wheelchair: false }
+
+    const direct = findRoute(local, 'GHC-4-H01', 'GHC-4-H02', {
+      ...defaultRouteOptions,
+      requireWheelchair: true,
+    })
+    // No detour exists on this floor, so requiring step-free must fail rather than cheat.
+    expect(direct.ok).toBe(false)
+  })
+
+  it('avoid-stairs filters on the stored kind, independently of accessibility', () => {
+    const local = gatesFixture()
+    const edge = local.edges['GHC-4-S01->GHC-5-S01']
+    local.edges[edge.id] = { ...edge, kind: 'walk', wheelchair: false }
+
+    // Now nothing on this path is stairs, so avoiding stairs must allow it.
+    const result = findRoute(local, 'GHC-4-S01', 'GHC-5-S01', {
+      ...defaultRouteOptions,
+      avoidStairs: true,
+    })
+    expect(result.ok).toBe(true)
+  })
+})
+
 describe('leg decomposition', () => {
   it('produces one leg per floor, each pointing at the way out', () => {
     const r = expectOk(route('GHC-4-H01', 'GHC-9-H01'))
@@ -124,6 +172,48 @@ describe('leg decomposition', () => {
     const r = expectOk(route('GHC-4-E01', 'GHC-4-R01'))
     expect(r.legs).toHaveLength(1)
     expect(r.floorChanges).toBe(0)
+  })
+
+  /**
+   * Crossing into another building changes which plan you are looking at, so it opens a
+   * new leg — but it does not change height, so it must not count as a floor change.
+   */
+  it('splits a leg at a building seam without counting it as a floor change', () => {
+    const seam = gatesFixture()
+    // A second building whose floor sits at the same elevation as Gates 4.
+    seam.buildings.push({
+      id: 'ZZZ',
+      name: 'Zed Hall',
+      placement: { x: 300, y: 0, rotationDeg: 0 },
+      floors: [
+        {
+          id: 'ZZZ:1',
+          buildingId: 'ZZZ',
+          floorKey: '1',
+          ordinal: 1,
+          elevationM: 0,
+          calibration: { pixelsPerMeter: 10, originX: 0, originY: 0, rotationDeg: 0 },
+        },
+      ],
+    })
+    seam.nodes['ZZZ-1-E01'] = { id: 'ZZZ-1-E01', floorId: 'ZZZ:1', x: 5, y: 5, kind: 'entrance' }
+    seam.edges['GHC-4-H01->ZZZ-1-E01'] = {
+      id: 'GHC-4-H01->ZZZ-1-E01',
+      from: 'GHC-4-H01',
+      to: 'ZZZ-1-E01',
+      bidirectional: true,
+      kind: 'walk',
+      distanceM: 3,
+      tiredIndex: 1,
+      wheelchair: true,
+    }
+
+    const result = findRoute(seam, 'GHC-4-H01', 'ZZZ-1-E01', defaultRouteOptions)
+    expect(result.ok).toBe(true)
+    if (!result.ok) return
+    expect(result.route.legs).toHaveLength(2)
+    expect(result.route.floorChanges).toBe(0)
+    expect(result.route.stairsCount).toBe(0)
   })
 })
 

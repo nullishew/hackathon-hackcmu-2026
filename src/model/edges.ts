@@ -1,14 +1,14 @@
 /**
- * Everything about an edge that ISN'T stored: its kind, its default tiredness,
- * its estimated duration, and its routing cost.
+ * Edge kinds, their defaults, and the routing cost.
  *
- * Edge kind is derived from the two node kinds rather than stored, because the nodes
- * already carry the information — two stairs nodes on different floors can only be a
- * staircase. That keeps the stored edge at exactly three fields.
+ * An edge's kind is STORED and entered by hand. Nothing infers it from geometry, floors or
+ * elevations: whether a link is stairs is a fact about the link that the person tracing it
+ * knows and the coordinates do not. It also means an edge between two buildings behaves
+ * exactly like an edge inside one — there is no cross-building special case anywhere.
  */
-import type { GraphEdge, GraphNode, NodeKind, Project } from './types'
+import type { EdgeKind, GraphEdge } from './types'
 
-export type EdgeKind = 'walk' | 'stairs' | 'elevator' | 'ramp'
+export type { EdgeKind }
 
 /** Tiredness multiplier per kind. Applied to distance, so it scales with how far you go. */
 export const TIRED_INDEX: Record<EdgeKind, number> = {
@@ -29,38 +29,9 @@ export const SPEED_MPS: Record<EdgeKind, number> = {
   ramp: 1.2,
 }
 
-const VERTICAL_KINDS: ReadonlySet<NodeKind> = new Set<NodeKind>(['stairs', 'elevator', 'ramp'])
-
-export function isVerticalNodeKind(kind: NodeKind): boolean {
-  return VERTICAL_KINDS.has(kind)
-}
-
-/**
- * Infer an edge's kind from its endpoints.
- *
- * Cross-floor edges must be vertical circulation of some sort, so when the endpoints
- * disagree we take the more specific kind rather than guessing "walk" — you cannot
- * change floors by walking on the level.
- */
-export function inferEdgeKind(a: GraphNode, b: GraphNode): EdgeKind {
-  const crossFloor = a.floorId !== b.floorId
-
-  if (crossFloor) {
-    if (a.kind === 'elevator' || b.kind === 'elevator') return 'elevator'
-    if (a.kind === 'ramp' || b.kind === 'ramp') return 'ramp'
-    return 'stairs'
-  }
-
-  if (a.kind === 'ramp' || b.kind === 'ramp') return 'ramp'
-  return 'walk'
-}
-
-/** Kind of an existing edge, looked up through the project. */
-export function edgeKind(project: Project, edge: GraphEdge): EdgeKind | null {
-  const a = project.nodes[edge.from]
-  const b = project.nodes[edge.to]
-  if (!a || !b) return null
-  return inferEdgeKind(a, b)
+/** The kind of an edge. Stored, never inferred. */
+export function edgeKind(edge: GraphEdge): EdgeKind {
+  return edge.kind
 }
 
 export function defaultTiredIndex(kind: EdgeKind): number {

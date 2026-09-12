@@ -38,12 +38,20 @@ export const GraphNode = z.object({
 })
 export type GraphNode = z.infer<typeof GraphNode>
 
+/** What kind of link an edge is. Entered by hand; never inferred from geometry. */
+export const EdgeKind = z.enum(['walk', 'stairs', 'elevator', 'ramp'])
+export type EdgeKind = z.infer<typeof EdgeKind>
+
 /**
- * An edge. Exactly three pieces of data beyond its endpoints: 3D distance,
- * tiredness multiplier, wheelchair accessibility.
+ * An edge. Four pieces of data beyond its endpoints: what kind of link it is, its 3D
+ * distance, its tiredness multiplier, and whether it is wheelchair accessible.
+ *
+ * Everything here is entered by hand. In particular `kind` is stored rather than worked
+ * out from the two floors, because whether a link is stairs is a fact about the link that
+ * the person tracing it knows and the coordinates do not. That also means an edge between
+ * two buildings is treated exactly like an edge inside one.
  *
  * Time is NOT stored — it is estimated for display from distance and speed.
- * Edge kind is NOT stored — it is derived from the two node kinds.
  */
 export const GraphEdge = z.object({
   id: z.string(),
@@ -51,6 +59,11 @@ export const GraphEdge = z.object({
   to: z.string(),
   /** When true the edge is traversable in both directions. */
   bidirectional: z.boolean(),
+  /**
+   * Required. Filled once by scripts/backfill-edge-kinds.ts for edges that predate this
+   * field; after that it is only ever set by hand, so a manual correction sticks.
+   */
+  kind: EdgeKind,
   /** 3D distance in metres (horizontal run plus rise). */
   distanceM: z.number().nonnegative(),
   tiredIndex: z.number().nonnegative(),

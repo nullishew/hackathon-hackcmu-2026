@@ -12,9 +12,9 @@
  *    gives us a genuine "no route" case for the avoid-stairs filter.
  */
 import { suggestDistanceM } from './autoDistance'
-import { defaultTiredIndex, defaultWheelchair, inferEdgeKind } from './edges'
+import { defaultTiredIndex, defaultWheelchair } from './edges'
 import { makeEdgeId } from './ids'
-import type { Building, Feature, Floor, GraphEdge, GraphNode, Project } from './types'
+import type { Building, EdgeKind, Feature, Floor, GraphEdge, GraphNode, Project } from './types'
 import { makeFloorId } from './types'
 
 const PIXELS_PER_METER = 10
@@ -124,12 +124,12 @@ export function gatesFixture(): Project {
 
   // The Helix: a stairs edge between every consecutive pair of floors.
   for (let i = 0; i < FLOORS.length - 1; i++) {
-    connect(project, `GHC-${FLOORS[i]}-S01`, `GHC-${FLOORS[i + 1]}-S01`)
+    connect(project, `GHC-${FLOORS[i]}-S01`, `GHC-${FLOORS[i + 1]}-S01`, 'stairs')
   }
 
   // The elevator shaft, skipping floor 6.
   for (let i = 0; i < ELEVATOR_STOPS.length - 1; i++) {
-    connect(project, `GHC-${ELEVATOR_STOPS[i]}-V01`, `GHC-${ELEVATOR_STOPS[i + 1]}-V01`)
+    connect(project, `GHC-${ELEVATOR_STOPS[i]}-V01`, `GHC-${ELEVATOR_STOPS[i + 1]}-V01`, 'elevator')
   }
 
   return project
@@ -139,13 +139,21 @@ export function gatesFixture(): Project {
  * Create an edge the way the editor does: infer the kind from the endpoints, then let
  * distance, tiredIndex and wheelchair fill themselves in.
  */
-function connect(project: Project, fromId: string, toId: string): GraphEdge {
+/**
+ * Create an edge the way the editor does, with its kind stated explicitly — the fixture
+ * says what each link is rather than relying on anything to work it out.
+ */
+function connect(
+  project: Project,
+  fromId: string,
+  toId: string,
+  kind: EdgeKind = 'walk',
+): GraphEdge {
   const from = project.nodes[fromId]
   const to = project.nodes[toId]
   if (!from || !to) throw new Error(`Cannot connect missing nodes: ${fromId} -> ${toId}`)
 
-  const kind = inferEdgeKind(from, to)
-  const suggestion = suggestDistanceM(project, from, to)
+  const suggestion = suggestDistanceM(project, from, to, kind)
   if (!suggestion) throw new Error(`Uncalibrated floor for edge ${fromId} -> ${toId}`)
 
   const edge: GraphEdge = {
@@ -153,6 +161,7 @@ function connect(project: Project, fromId: string, toId: string): GraphEdge {
     from: fromId,
     to: toId,
     bidirectional: true,
+    kind,
     distanceM: round2(suggestion.distanceM),
     tiredIndex: defaultTiredIndex(kind),
     wheelchair: defaultWheelchair(kind),

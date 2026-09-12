@@ -39,6 +39,8 @@ export interface FloorCanvasProps {
   overlay?: ReactNode
   viewportApi?: ViewportApi
   className?: string
+  /** Treat a one-finger drag as map panning instead of an editing gesture. */
+  panWithPrimaryPointer?: boolean
 }
 
 const NODE_STYLE: Record<string, { fill: string; r: number }> = {
@@ -78,12 +80,14 @@ export function FloorCanvas({
   overlay,
   viewportApi,
   className,
+  panWithPrimaryPointer = false,
 }: FloorCanvasProps) {
   const internal = useViewport()
   const vp = viewportApi ?? internal
   const { svgRef, viewport, toImage, zoomAt, panBy, fit } = vp
 
-  const panning = useRef<{ x: number; y: number } | null>(null)
+  const pointers = useRef(new Map<number, { x: number; y: number }>())
+  const gesture = useRef<{ distance: number; centerX: number; centerY: number } | null>(null)
   const image = floor?.image
 
   // Frame the plan when the floor (or its image) changes.
@@ -114,27 +118,49 @@ export function FloorCanvas({
       ref={svgRef}
       className={`floor-canvas ${className ?? ''}`}
       onPointerDown={(event) => {
-        if (isPanGesture(event)) {
-          panning.current = { x: event.clientX, y: event.clientY }
+        pointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY })
+        if (pointers.current.size === 2) {
+          gesture.current = twoFingerGesture(pointers.current)
+          event.currentTarget.setPointerCapture(event.pointerId)
+          return
+        }
+        if (panWithPrimaryPointer || isPanGesture(event)) {
           event.currentTarget.setPointerCapture(event.pointerId)
           return
         }
         onCanvasPointerDown?.(toImage(event.clientX, event.clientY), event)
       }}
       onPointerMove={(event) => {
-        if (panning.current) {
-          panBy(event.clientX - panning.current.x, event.clientY - panning.current.y)
-          panning.current = { x: event.clientX, y: event.clientY }
+        const previous = pointers.current.get(event.pointerId)
+        pointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY })
+        if (pointers.current.size === 2) {
+          const next = twoFingerGesture(pointers.current)
+          const before = gesture.current
+          if (before) {
+            panBy(next.centerX - before.centerX, next.centerY - before.centerY)
+            zoomAt(next.centerX, next.centerY, next.distance / before.distance)
+          }
+          gesture.current = next
+          return
+        }
+        if (previous && (panWithPrimaryPointer || isPanGesture(event))) {
+          panBy(event.clientX - previous.x, event.clientY - previous.y)
           return
         }
         onCanvasPointerMove?.(toImage(event.clientX, event.clientY), event)
       }}
       onPointerUp={(event) => {
-        if (panning.current) {
-          panning.current = null
+        const wasGesture = pointers.current.size > 1 || panWithPrimaryPointer || isPanGesture(event)
+        pointers.current.delete(event.pointerId)
+        if (pointers.current.size < 2) gesture.current = null
+        if (wasGesture) {
           return
         }
         onCanvasPointerUp?.(toImage(event.clientX, event.clientY), event)
+      }}
+      onPointerCancel={(event) => {
+        pointers.current.delete(event.pointerId)
+        if (pointers.current.size < 2) gesture.current = null
       }}
     >
       <g transform={`translate(${viewport.tx} ${viewport.ty}) scale(${viewport.scale})`}>
@@ -253,4 +279,15 @@ export function FloorCanvas({
       </g>
     </svg>
   )
+}
+
+function twoFingerGesture(pointers: Map<number, { x: number; y: number }>) {
+  const [a, b] = [...pointers.values()]
+  const dx = b.x - a.x
+  const dy = b.y - a.y
+  return {
+    distance: Math.max(1, Math.hypot(dx, dy)),
+    centerX: (a.x + b.x) / 2,
+    centerY: (a.y + b.y) / 2,
+  }
 }

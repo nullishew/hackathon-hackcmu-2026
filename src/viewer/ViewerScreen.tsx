@@ -10,8 +10,8 @@ import { findFloor } from '../model/types'
 import { defaultRouteOptions, findRoute, type RouteOptions } from '../routing/route'
 import { useProjectStore } from '../state/projectStore'
 import { StackScene } from '../viewer3d/StackScene'
+import { BuildingMap } from './BuildingMap'
 import { FilterPanel } from './FilterPanel'
-import { LegView } from './LegView'
 import { SearchField } from './SearchField'
 import { NARROW_QUERY, useMediaQuery } from './useMediaQuery'
 
@@ -25,8 +25,7 @@ export function ViewerScreen() {
   const [toId, setToId] = useState<string | null>(null)
   const [options, setOptions] = useState<RouteOptions>(defaultRouteOptions)
   const [exaggeration, setExaggeration] = useState(2.5)
-  /** When set, we are looking at one floor flat instead of the whole stack. */
-  const [drillFloorId, setDrillFloorId] = useState<string | null>(null)
+  const [viewMode, setViewMode] = useState<'3d' | '2d'>('3d')
 
   const isNarrow = useMediaQuery(NARROW_QUERY)
   /**
@@ -56,13 +55,6 @@ export function ViewerScreen() {
     const r = findRoute(project, fromId, toId, { ...options, tirednessWeight: 0 })
     return r.ok ? r.route : null
   }, [project, fromId, toId, options])
-
-  // Follow the route into the floor the user is looking at.
-  const activeLegIndex = useMemo(() => {
-    if (!route || !drillFloorId) return 0
-    const index = route.legs.findIndex((l) => l.floorId === drillFloorId)
-    return index >= 0 ? index : 0
-  }, [route, drillFloorId])
 
   if (status === 'loading' || status === 'idle') {
     return <div className="screen-message">Loading map…</div>
@@ -167,9 +159,9 @@ export function ViewerScreen() {
                   <li key={`${leg.floorId}-${i}`}>
                     <button
                       type="button"
-                      className={drillFloorId === leg.floorId ? 'leg active' : 'leg'}
+                      className={viewMode === '2d' ? 'leg active' : 'leg'}
                       onClick={() => {
-                        setDrillFloorId(leg.floorId)
+                        setViewMode('2d')
                         // The drawer is covering the floor they just asked to see.
                         if (isNarrow) setPanelChoice(false)
                       }}
@@ -220,21 +212,20 @@ export function ViewerScreen() {
 
           <button
             type="button"
-            className={drillFloorId ? 'tab' : 'tab active'}
-            onClick={() => setDrillFloorId(null)}
+            className={viewMode === '3d' ? 'tab active' : 'tab'}
+            onClick={() => setViewMode('3d')}
           >
             3D stack
           </button>
           <button
             type="button"
-            className={drillFloorId ? 'tab active' : 'tab'}
-            disabled={!route && !drillFloorId}
-            onClick={() => setDrillFloorId(route?.legs[0]?.floorId ?? null)}
+            className={viewMode === '2d' ? 'tab active' : 'tab'}
+            onClick={() => setViewMode('2d')}
           >
-            One floor
+            2D map
           </button>
 
-          {!drillFloorId && (
+          {viewMode === '3d' && (
             <label className="exaggeration">
               Height ×{exaggeration.toFixed(1)}
               <input
@@ -247,28 +238,22 @@ export function ViewerScreen() {
               />
             </label>
           )}
+          <span className="camera-help">
+            {viewMode === '3d' ? 'Drag to look · two fingers/right drag to move · pinch to explore' : 'Drag to move · pinch or scroll to zoom'}
+          </span>
         </div>
 
         {/* The stage body owns the remaining height, which the 3D canvas needs resolved. */}
         <div className="stage-body">
-          {drillFloorId ? (
-            <LegView
-              project={project}
-              route={route}
-              legIndex={activeLegIndex}
-              floorId={drillFloorId}
-              onChangeLeg={(index) => {
-                const leg = route?.legs[index]
-                if (leg) setDrillFloorId(leg.floorId)
-              }}
-            />
+          {viewMode === '2d' ? (
+            <BuildingMap project={project} route={route} />
           ) : (
             <StackScene
               project={project}
               route={route}
               activeFloorId={null}
               verticalExaggeration={exaggeration}
-              onSelectFloor={setDrillFloorId}
+              onSelectFloor={() => setViewMode('2d')}
             />
           )}
         </div>

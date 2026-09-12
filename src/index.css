@@ -765,6 +765,11 @@ button.tab.active {
 .exaggeration input {
   width: 120px;
 }
+.camera-help {
+  color: var(--text-dim);
+  font-size: 12px;
+  margin-left: 4px;
+}
 /* The 3D canvas sizes itself from its container, so the container must have a real
    height rather than a percentage that resolves against nothing. */
 .stage-body {
@@ -780,6 +785,61 @@ button.tab.active {
 }
 .viewer-stage canvas {
   display: block;
+}
+
+.building-map {
+  position: relative;
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  background: #0e0d0b;
+}
+.building-map-canvas {
+  cursor: grab;
+}
+.building-map-canvas:active {
+  cursor: grabbing;
+}
+.map-help {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  white-space: nowrap;
+  color: var(--text-dim);
+  font-size: 12px;
+  background: rgba(28, 26, 22, 0.9);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 5px 11px;
+}
+.map-toolbar {
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  max-width: calc(100% - 20px);
+  color: var(--text-dim);
+  font-size: 12px;
+  background: rgba(28, 26, 22, 0.92);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: 5px 8px;
+}
+.map-toolbar label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text);
+}
+.map-toolbar select {
+  width: auto;
+  padding: 3px 5px;
 }
 
 .leg-view {
@@ -871,6 +931,10 @@ button.tab.active {
   }
   .exaggeration input {
     width: 90px;
+  }
+  .camera-help {
+    width: 100%;
+    margin-left: 0;
   }
 
   .toolbar {

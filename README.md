@@ -202,6 +202,9 @@ CMU publishes survey-grade footprints for 134 buildings as GeoJSON at
 
 ## Deploying the public site
 
+See **[DEPLOY.md](DEPLOY.md)** for a step-by-step runbook aimed at someone setting this up on
+a fresh machine, including troubleshooting. The short version follows.
+
 The viewer needs no server. Searching, routing and drawing all happen in the browser, and
 only the editor writes — so the graph is baked into the build as a plain file and the whole
 thing deploys as static files, free, anywhere.

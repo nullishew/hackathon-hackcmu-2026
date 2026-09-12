@@ -1,0 +1,99 @@
+{
+  "floorId": "GHC:7",
+  "nodes": [
+    {
+      "id": "GHC-7-H01",
+      "floorId": "GHC:7",
+      "x": 160,
+      "y": 300,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-7-H02",
+      "floorId": "GHC:7",
+      "x": 260,
+      "y": 300,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-7-R01",
+      "floorId": "GHC:7",
+      "x": 160,
+      "y": 220,
+      "kind": "room",
+      "roomNumber": "7301"
+    },
+    {
+      "id": "GHC-7-S01",
+      "floorId": "GHC:7",
+      "x": 130,
+      "y": 300,
+      "kind": "stairs",
+      "featureId": "feat-helix"
+    },
+    {
+      "id": "GHC-7-V01",
+      "floorId": "GHC:7",
+      "x": 360,
+      "y": 300,
+      "kind": "elevator",
+      "featureId": "feat-elev-a"
+    }
+  ],
+  "edges": [
+    {
+      "id": "GHC-7-H01->GHC-7-H02",
+      "from": "GHC-7-H01",
+      "to": "GHC-7-H02",
+      "bidirectional": true,
+      "distanceM": 10,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-7-H01->GHC-7-R01",
+      "from": "GHC-7-H01",
+      "to": "GHC-7-R01",
+      "bidirectional": true,
+      "distanceM": 8,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-7-H02->GHC-7-V01",
+      "from": "GHC-7-H02",
+      "to": "GHC-7-V01",
+      "bidirectional": true,
+      "distanceM": 10,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-7-S01->GHC-7-H01",
+      "from": "GHC-7-S01",
+      "to": "GHC-7-H01",
+      "bidirectional": true,
+      "distanceM": 3,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-7-S01->GHC-8-S01",
+      "from": "GHC-7-S01",
+      "to": "GHC-8-S01",
+      "bidirectional": true,
+      "distanceM": 10.06,
+      "tiredIndex": 2,
+      "wheelchair": false
+    },
+    {
+      "id": "GHC-7-V01->GHC-8-V01",
+      "from": "GHC-7-V01",
+      "to": "GHC-8-V01",
+      "bidirectional": true,
+      "distanceM": 4.5,
+      "tiredIndex": 0.25,
+      "wheelchair": true
+    }
+  ]
+}

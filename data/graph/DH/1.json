@@ -1346,10 +1346,10 @@
       "from": "DH-1-V01",
       "to": "WEH-7-V02",
       "bidirectional": true,
-      "kind": "elevator",
+      "kind": "stairs",
       "distanceM": 20.82,
       "tiredIndex": 0.25,
-      "wheelchair": true
+      "wheelchair": false
     },
     {
       "id": "DH-1-V02->DH-2-V02",

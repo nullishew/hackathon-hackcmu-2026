@@ -36,3 +36,23 @@ export function nearestPoint<T extends { x: number; y: number }>(
   }
   return best
 }
+
+/**
+ * Did the gesture that just ended move far enough to be a drag rather than a click?
+ *
+ * Both the 2D map and the 3D stack listen for clicks on the same left button that also
+ * pans or orbits the camera, and the browser raises a click on release however far the
+ * pointer travelled. Without this check, orbiting the 3D view drops you into the 2D map.
+ *
+ * A null start means we never saw the press — the gesture began somewhere else — so treat
+ * it as a drag. Refusing to act is the safe default: a missed click costs one more click,
+ * an accidental one throws away what the user was looking at.
+ */
+export function isDragGesture(
+  start: { x: number; y: number } | null,
+  end: { x: number; y: number },
+  slopPx: number = TAP_SLOP_PX,
+): boolean {
+  if (!start) return true
+  return Math.hypot(end.x - start.x, end.y - start.y) > slopPx
+}

@@ -10,12 +10,13 @@
  * at true scale the stack reads as a squashed pile rather than a building.
  */
 import { Line, OrbitControls, useTexture } from '@react-three/drei'
-import { Canvas } from '@react-three/fiber'
+import { Canvas, type ThreeEvent } from '@react-three/fiber'
 import { Suspense, useEffect, useMemo, useRef } from 'react'
 import * as THREE from 'three'
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib'
 import type { Project } from '../model/types'
 import type { Route } from '../routing/route'
+import { isDragGesture } from '../viewer/pick'
 import { boundsOf, buildQuad, placeFloors, routeToPoints, type PlacedFloor } from './stackGeometry'
 
 const FLOOR_OPACITY = 0.67
@@ -88,6 +89,25 @@ export function StackScene({
 
   const { center, radius } = useMemo(() => boundsOf(placed), [placed])
 
+  /**
+   * Where the pointer went down, so a camera drag is not mistaken for a click.
+   *
+   * OrbitControls uses the same left-drag that the floors listen for, and three.js raises
+   * a click on pointerup regardless of how far the pointer travelled — so orbiting the
+   * view used to drop you into the 2D map. One ref for the whole scene rather than one per
+   * floor, because a drag often starts over one floor and releases over another.
+   */
+  const pointerDownAt = useRef<{ x: number; y: number } | null>(null)
+
+  function wasDrag(event: { nativeEvent: PointerEvent | MouseEvent }): boolean {
+    const start = pointerDownAt.current
+    pointerDownAt.current = null
+    return isDragGesture(start, {
+      x: event.nativeEvent.clientX,
+      y: event.nativeEvent.clientY,
+    })
+  }
+
   if (placed.length === 0) {
     return (
       <div className="screen-message">
@@ -109,6 +129,13 @@ export function StackScene({
             active={p.floor.id === activeFloorId}
             onRoute={routeFloorIds.has(p.floor.id)}
             anyRoute={routeFloorIds.size > 0}
+            onPointerDown={(event) => {
+              pointerDownAt.current = {
+                x: event.nativeEvent.clientX,
+                y: event.nativeEvent.clientY,
+              }
+            }}
+            wasDrag={wasDrag}
             onSelect={() => onSelectFloor(p.floor.id)}
           />
         ))}
@@ -176,6 +203,9 @@ interface PlaneProps {
   onRoute: boolean
   anyRoute: boolean
   onSelect: () => void
+  onPointerDown: (event: ThreeEvent<PointerEvent>) => void
+  /** True when the gesture that just ended was a camera drag rather than a click. */
+  wasDrag: (event: ThreeEvent<MouseEvent>) => boolean
 }
 
 /**
@@ -206,6 +236,8 @@ function BlankPlane(props: PlaneProps) {
 function FloorPlanMesh({
   placed,
   onSelect,
+  onPointerDown,
+  wasDrag,
   map,
   texelSize,
 }: PlaneProps & { map: THREE.Texture; texelSize: THREE.Vector2 }) {
@@ -214,7 +246,9 @@ function FloorPlanMesh({
   return (
     <mesh
       geometry={geometry}
+      onPointerDown={onPointerDown}
       onClick={(event) => {
+        if (wasDrag(event)) return
         event.stopPropagation()
         onSelect()
       }}
@@ -235,13 +269,15 @@ function FloorPlanMesh({
   )
 }
 
-function BlankPlaneMesh({ placed, onSelect }: PlaneProps) {
+function BlankPlaneMesh({ placed, onSelect, onPointerDown, wasDrag }: PlaneProps) {
   const geometry = useMemo(() => buildQuad(placed.corners), [placed.corners])
 
   return (
     <mesh
       geometry={geometry}
+      onPointerDown={onPointerDown}
       onClick={(event) => {
+        if (wasDrag(event)) return
         event.stopPropagation()
         onSelect()
       }}

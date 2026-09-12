@@ -1,15 +1,24 @@
-/** A top-down campus map for one selected level across every building. */
+/** A top-down campus map for one selected height across every building. */
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useViewport } from '../floor2d/useViewport'
 import { worldPositionWith } from '../model/geometry'
 import type { Building, Floor, Project } from '../model/types'
 import type { Route } from '../routing/route'
 
+/** Elevations are stored as metres; treat anything closer than a centimetre as the same slab. */
+const ELEVATION_EPS = 0.01
+
 interface MapFloor { building: Building; floor: Floor; matrix: string; corners: Array<{ x: number; y: number }> }
 
 export function BuildingMap({ project, route }: { project: Project; route: Route | null }) {
-  const levels = useMemo(() => [...new Set(project.buildings.flatMap((b) => b.floors.map((f) => f.ordinal)))].sort((a, b) => a - b), [project.buildings])
-  const [level, setLevel] = useState<number>(() => levels.find((ordinal) => ordinal >= 1) ?? levels[0] ?? 0)
+  const levels = useMemo(
+    () =>
+      [...new Set(project.buildings.flatMap((b) => b.floors.map((f) => f.elevationM)))].sort(
+        (a, b) => a - b,
+      ),
+    [project.buildings],
+  )
+  const [level, setLevel] = useState<number>(() => levels.find((elevation) => Math.abs(elevation) < ELEVATION_EPS) ?? levels[0] ?? 0)
   const { svgRef, viewport, fit, panBy, zoomAt } = useViewport()
   const pointers = useRef(new Map<number, { x: number; y: number }>())
   const gesture = useRef<{ distance: number; x: number; y: number } | null>(null)
@@ -64,9 +73,9 @@ export function BuildingMap({ project, route }: { project: Project; route: Route
   </div>
 }
 
-function placeLevel(project: Project, level: number): MapFloor[] {
+function placeLevel(project: Project, elevationM: number): MapFloor[] {
   return project.buildings.flatMap((building) => {
-    const floor = building.floors.find((candidate) => candidate.ordinal === level)
+    const floor = building.floors.find((candidate) => Math.abs(candidate.elevationM - elevationM) < ELEVATION_EPS)
     if (!floor?.image || !floor.calibration) return []
     const p00 = worldPositionWith({ x: 0, y: 0 }, floor, building); const p10 = worldPositionWith({ x: floor.image.widthPx, y: 0 }, floor, building); const p01 = worldPositionWith({ x: 0, y: floor.image.heightPx }, floor, building); const p11 = worldPositionWith({ x: floor.image.widthPx, y: floor.image.heightPx }, floor, building)
     if (!p00 || !p10 || !p01 || !p11) return []
@@ -79,5 +88,13 @@ function boundsOf(floors: MapFloor[]) {
   const minX = Math.min(...points.map((point) => point.x), 0); const minY = Math.min(...points.map((point) => point.y), 0); const maxX = Math.max(...points.map((point) => point.x), 100); const maxY = Math.max(...points.map((point) => point.y), 100); const margin = 12
   return { minX: minX - margin, minY: minY - margin, width: maxX - minX + margin * 2, height: maxY - minY + margin * 2 }
 }
-function levelName(project: Project, ordinal: number) { const labels = project.buildings.flatMap((building) => building.floors.filter((floor) => floor.ordinal === ordinal).map((floor) => floor.floorKey)); return labels.length === 1 ? `Level ${labels[0]}` : `Level ${labels.join(' / ')}` }
+function levelName(project: Project, elevationM: number) {
+  const labels = project.buildings.flatMap((building) =>
+    building.floors
+      .filter((floor) => Math.abs(floor.elevationM - elevationM) < ELEVATION_EPS)
+      .map((floor) => `${building.id} ${floor.floorKey}`),
+  )
+  const height = Number.isInteger(elevationM) ? `${elevationM}` : elevationM.toFixed(2)
+  return labels.length === 0 ? `${height} m` : `${height} m · ${labels.join(' / ')}`
+}
 function pinch(points: Map<number, { x: number; y: number }>) { const [a, b] = [...points.values()]; return { distance: Math.max(1, Math.hypot(a.x - b.x, a.y - b.y)), x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 } }

@@ -381,13 +381,19 @@ function updateBuildings(
 
 /**
  * Numeric floors keep their number. A single letter is a basement: A sits just below 1
- * (ordinal 0), B below that (−1), and so on. Anything else is NaN so the caller can warn.
+ * (ordinal 0), B below that (−1), and so on. A trailing M is a mezzanine halfway to the
+ * next floor (1M = 1.5, AM = 0.5) — those are the ramp landings, not extra storeys.
  */
 function floorOrdinal(floorKey: string): number {
-  const n = Number(floorKey)
-  if (Number.isFinite(n)) return n
-  if (/^[A-Z]$/i.test(floorKey)) return 'A'.charCodeAt(0) - floorKey.toUpperCase().charCodeAt(0)
-  return Number.NaN
+  const key = floorKey.toUpperCase()
+  const mezz = key.length > 1 && key.endsWith('M') ? key.slice(0, -1) : null
+  const base = mezz ?? key
+  const n = Number(base)
+  let ordinal: number
+  if (Number.isFinite(n)) ordinal = n
+  else if (/^[A-Z]$/.test(base)) ordinal = 'A'.charCodeAt(0) - base.charCodeAt(0)
+  else return Number.NaN
+  return mezz ? ordinal + 0.5 : ordinal
 }
 
 function byId(a: { id: string }, b: { id: string }): number {

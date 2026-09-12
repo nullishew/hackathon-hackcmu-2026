@@ -1,0 +1,819 @@
+{
+  "floorId": "GHC:3",
+  "nodes": [
+    {
+      "id": "GHC-3-E01",
+      "floorId": "GHC:3",
+      "x": 616.09,
+      "y": 840.59,
+      "kind": "entrance"
+    },
+    {
+      "id": "GHC-3-E02",
+      "floorId": "GHC:3",
+      "x": 1096.73,
+      "y": 1552.53,
+      "kind": "entrance"
+    },
+    {
+      "id": "GHC-3-H01",
+      "floorId": "GHC:3",
+      "x": 1509.47,
+      "y": 743.36,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H02",
+      "floorId": "GHC:3",
+      "x": 1086.3,
+      "y": 1426.28,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H03",
+      "floorId": "GHC:3",
+      "x": 1377.11,
+      "y": 1344.69,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H04",
+      "floorId": "GHC:3",
+      "x": 1441.77,
+      "y": 1063.75,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H05",
+      "floorId": "GHC:3",
+      "x": 1149.61,
+      "y": 1321.86,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H06",
+      "floorId": "GHC:3",
+      "x": 1161.61,
+      "y": 1232.81,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H07",
+      "floorId": "GHC:3",
+      "x": 1181.78,
+      "y": 1102.94,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H08",
+      "floorId": "GHC:3",
+      "x": 1197.1,
+      "y": 954.51,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H09",
+      "floorId": "GHC:3",
+      "x": 1210.01,
+      "y": 899.66,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H10",
+      "floorId": "GHC:3",
+      "x": 1224.53,
+      "y": 781.08,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H11",
+      "floorId": "GHC:3",
+      "x": 1139.68,
+      "y": 956.49,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H12",
+      "floorId": "GHC:3",
+      "x": 1239.49,
+      "y": 1236.69,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H13",
+      "floorId": "GHC:3",
+      "x": 1150.81,
+      "y": 1062.19,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H14",
+      "floorId": "GHC:3",
+      "x": 1411.27,
+      "y": 932.27,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H15",
+      "floorId": "GHC:3",
+      "x": 1403.24,
+      "y": 828.36,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H16",
+      "floorId": "GHC:3",
+      "x": 1398.13,
+      "y": 750.64,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H17",
+      "floorId": "GHC:3",
+      "x": 1068.44,
+      "y": 1135.28,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H18",
+      "floorId": "GHC:3",
+      "x": 1094.79,
+      "y": 1200.11,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H19",
+      "floorId": "GHC:3",
+      "x": 1109.02,
+      "y": 1277.06,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-H20",
+      "floorId": "GHC:3",
+      "x": 1106.91,
+      "y": 1308.68,
+      "kind": "corner"
+    },
+    {
+      "id": "GHC-3-R01",
+      "floorId": "GHC:3",
+      "x": 932.73,
+      "y": 1519.07,
+      "kind": "room",
+      "roomNumber": "3103"
+    },
+    {
+      "id": "GHC-3-R02",
+      "floorId": "GHC:3",
+      "x": 756.8,
+      "y": 1251.46,
+      "kind": "room",
+      "roomNumber": "3101",
+      "name": "Gates La Prima"
+    },
+    {
+      "id": "GHC-3-R03",
+      "floorId": "GHC:3",
+      "x": 833.64,
+      "y": 987.23,
+      "kind": "room",
+      "name": "Gates La Prima seating"
+    },
+    {
+      "id": "GHC-3-R04",
+      "floorId": "GHC:3",
+      "x": 1342.98,
+      "y": 328.13,
+      "kind": "room",
+      "roomNumber": "3309"
+    },
+    {
+      "id": "GHC-3-R05",
+      "floorId": "GHC:3",
+      "x": 1515.96,
+      "y": 428.64,
+      "kind": "room",
+      "roomNumber": "3307"
+    },
+    {
+      "id": "GHC-3-R06",
+      "floorId": "GHC:3",
+      "x": 1434.62,
+      "y": 747.98,
+      "kind": "room",
+      "roomNumber": "3304"
+    },
+    {
+      "id": "GHC-3-R07",
+      "floorId": "GHC:3",
+      "x": 1384.89,
+      "y": 699.79,
+      "kind": "room",
+      "roomNumber": "3303"
+    },
+    {
+      "id": "GHC-3-R08",
+      "floorId": "GHC:3",
+      "x": 1286.46,
+      "y": 698.76,
+      "kind": "room",
+      "roomNumber": "3305"
+    },
+    {
+      "id": "GHC-3-R09",
+      "floorId": "GHC:3",
+      "x": 1282.88,
+      "y": 761.3,
+      "kind": "room",
+      "roomNumber": "3300"
+    },
+    {
+      "id": "GHC-3-R10",
+      "floorId": "GHC:3",
+      "x": 1341.32,
+      "y": 821.8,
+      "kind": "room",
+      "roomNumber": "3813"
+    },
+    {
+      "id": "GHC-3-R11",
+      "floorId": "GHC:3",
+      "x": 1274.16,
+      "y": 817.18,
+      "kind": "room",
+      "roomNumber": "3811"
+    },
+    {
+      "id": "GHC-3-R12",
+      "floorId": "GHC:3",
+      "x": 1343.66,
+      "y": 950.5,
+      "kind": "room",
+      "roomNumber": "3207"
+    },
+    {
+      "id": "GHC-3-R13",
+      "floorId": "GHC:3",
+      "x": 1259.44,
+      "y": 953.7,
+      "kind": "room",
+      "roomNumber": "3805"
+    },
+    {
+      "id": "GHC-3-R14",
+      "floorId": "GHC:3",
+      "x": 1476.4,
+      "y": 999.02,
+      "kind": "room",
+      "roomNumber": "3301"
+    },
+    {
+      "id": "GHC-3-R15",
+      "floorId": "GHC:3",
+      "x": 1346.87,
+      "y": 996.27,
+      "kind": "room",
+      "roomNumber": "3209"
+    },
+    {
+      "id": "GHC-3-R16",
+      "floorId": "GHC:3",
+      "x": 1469.06,
+      "y": 1238.27,
+      "kind": "room",
+      "roomNumber": "3301A"
+    },
+    {
+      "id": "GHC-3-R17",
+      "floorId": "GHC:3",
+      "x": 1278.71,
+      "y": 1134.09,
+      "kind": "room",
+      "roomNumber": "3205"
+    },
+    {
+      "id": "GHC-3-R18",
+      "floorId": "GHC:3",
+      "x": 1165.23,
+      "y": 919.45,
+      "kind": "room",
+      "roomNumber": "3808"
+    },
+    {
+      "id": "GHC-3-R19",
+      "floorId": "GHC:3",
+      "x": 1099.74,
+      "y": 895.67,
+      "kind": "room",
+      "roomNumber": "3806"
+    },
+    {
+      "id": "GHC-3-R20",
+      "floorId": "GHC:3",
+      "x": 1124.18,
+      "y": 1005.14,
+      "kind": "room",
+      "roomNumber": "3804"
+    },
+    {
+      "id": "GHC-3-R21",
+      "floorId": "GHC:3",
+      "x": 1268.07,
+      "y": 1274.9,
+      "kind": "room",
+      "roomNumber": "3203"
+    },
+    {
+      "id": "GHC-3-R22",
+      "floorId": "GHC:3",
+      "x": 1274.74,
+      "y": 1409.21,
+      "kind": "room",
+      "roomNumber": "3201"
+    },
+    {
+      "id": "GHC-3-R23",
+      "floorId": "GHC:3",
+      "x": 1100,
+      "y": 826.06,
+      "kind": "room",
+      "roomNumber": "3200"
+    },
+    {
+      "id": "GHC-3-S01",
+      "floorId": "GHC:3",
+      "x": 1091.7,
+      "y": 1494.46,
+      "kind": "stairs"
+    },
+    {
+      "id": "GHC-3-S02",
+      "floorId": "GHC:3",
+      "x": 1026.43,
+      "y": 1084.97,
+      "kind": "stairs",
+      "name": "Helix Start - 3",
+      "featureId": "feat-helix"
+    },
+    {
+      "id": "GHC-3-S03",
+      "floorId": "GHC:3",
+      "x": 1265.72,
+      "y": 899.45,
+      "kind": "stairs"
+    }
+  ],
+  "edges": [
+    {
+      "id": "GHC-3-H01->GHC-3-H15",
+      "from": "GHC-3-H01",
+      "to": "GHC-3-H15",
+      "bidirectional": true,
+      "distanceM": 9.6,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H01->GHC-3-R06",
+      "from": "GHC-3-H01",
+      "to": "GHC-3-R06",
+      "bidirectional": true,
+      "distanceM": 5.29,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H02->GHC-3-R22",
+      "from": "GHC-3-H02",
+      "to": "GHC-3-R22",
+      "bidirectional": true,
+      "distanceM": 13.35,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H04->GHC-3-R14",
+      "from": "GHC-3-H04",
+      "to": "GHC-3-R14",
+      "bidirectional": true,
+      "distanceM": 5.18,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H04->GHC-3-R15",
+      "from": "GHC-3-H04",
+      "to": "GHC-3-R15",
+      "bidirectional": true,
+      "distanceM": 8.22,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H05->GHC-3-H06",
+      "from": "GHC-3-H05",
+      "to": "GHC-3-H06",
+      "bidirectional": true,
+      "distanceM": 6.34,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H06->GHC-3-H07",
+      "from": "GHC-3-H06",
+      "to": "GHC-3-H07",
+      "bidirectional": true,
+      "distanceM": 9.27,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H06->GHC-3-H12",
+      "from": "GHC-3-H06",
+      "to": "GHC-3-H12",
+      "bidirectional": true,
+      "distanceM": 5.5,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H07->GHC-3-H08",
+      "from": "GHC-3-H07",
+      "to": "GHC-3-H08",
+      "bidirectional": true,
+      "distanceM": 10.53,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H07->GHC-3-H13",
+      "from": "GHC-3-H07",
+      "to": "GHC-3-H13",
+      "bidirectional": true,
+      "distanceM": 3.61,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H08->GHC-3-H09",
+      "from": "GHC-3-H08",
+      "to": "GHC-3-H09",
+      "bidirectional": true,
+      "distanceM": 3.98,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H08->GHC-3-H11",
+      "from": "GHC-3-H08",
+      "to": "GHC-3-H11",
+      "bidirectional": true,
+      "distanceM": 4.05,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H08->GHC-3-R13",
+      "from": "GHC-3-H08",
+      "to": "GHC-3-R13",
+      "bidirectional": true,
+      "distanceM": 4.4,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H09->GHC-3-H10",
+      "from": "GHC-3-H09",
+      "to": "GHC-3-H10",
+      "bidirectional": true,
+      "distanceM": 8.43,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H09->GHC-3-R18",
+      "from": "GHC-3-H09",
+      "to": "GHC-3-R18",
+      "bidirectional": true,
+      "distanceM": 3.45,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H09->GHC-3-R19",
+      "from": "GHC-3-H09",
+      "to": "GHC-3-R19",
+      "bidirectional": true,
+      "distanceM": 7.79,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H09->GHC-3-S03",
+      "from": "GHC-3-H09",
+      "to": "GHC-3-S03",
+      "bidirectional": true,
+      "distanceM": 3.93,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H10->GHC-3-R23",
+      "from": "GHC-3-H10",
+      "to": "GHC-3-R23",
+      "bidirectional": true,
+      "distanceM": 9.34,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H14->GHC-3-H15",
+      "from": "GHC-3-H14",
+      "to": "GHC-3-H15",
+      "bidirectional": true,
+      "distanceM": 7.35,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H14->GHC-3-R12",
+      "from": "GHC-3-H14",
+      "to": "GHC-3-R12",
+      "bidirectional": true,
+      "distanceM": 4.94,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H15->GHC-3-H16",
+      "from": "GHC-3-H15",
+      "to": "GHC-3-H16",
+      "bidirectional": true,
+      "distanceM": 5.5,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H15->GHC-3-R10",
+      "from": "GHC-3-H15",
+      "to": "GHC-3-R10",
+      "bidirectional": true,
+      "distanceM": 4.39,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H17->GHC-3-H18",
+      "from": "GHC-3-H17",
+      "to": "GHC-3-H18",
+      "bidirectional": true,
+      "distanceM": 4.94,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H18->GHC-3-H19",
+      "from": "GHC-3-H18",
+      "to": "GHC-3-H19",
+      "bidirectional": true,
+      "distanceM": 5.52,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-H19->GHC-3-H20",
+      "from": "GHC-3-H19",
+      "to": "GHC-3-H20",
+      "bidirectional": true,
+      "distanceM": 2.24,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R01->GHC-3-H02",
+      "from": "GHC-3-R01",
+      "to": "GHC-3-H02",
+      "bidirectional": true,
+      "distanceM": 12.66,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R01->GHC-3-R02",
+      "from": "GHC-3-R01",
+      "to": "GHC-3-R02",
+      "bidirectional": true,
+      "distanceM": 22.6,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R02->GHC-3-R03",
+      "from": "GHC-3-R02",
+      "to": "GHC-3-R03",
+      "bidirectional": true,
+      "distanceM": 19.42,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R03->GHC-3-E01",
+      "from": "GHC-3-R03",
+      "to": "GHC-3-E01",
+      "bidirectional": true,
+      "distanceM": 18.51,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R03->GHC-3-S02",
+      "from": "GHC-3-R03",
+      "to": "GHC-3-S02",
+      "bidirectional": true,
+      "distanceM": 15.25,
+      "tiredIndex": 1,
+      "wheelchair": false
+    },
+    {
+      "id": "GHC-3-R04->GHC-3-R05",
+      "from": "GHC-3-R04",
+      "to": "GHC-3-R05",
+      "bidirectional": true,
+      "distanceM": 14.12,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R05->GHC-3-H01",
+      "from": "GHC-3-R05",
+      "to": "GHC-3-H01",
+      "bidirectional": true,
+      "distanceM": 22.21,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R07->GHC-3-H16",
+      "from": "GHC-3-R07",
+      "to": "GHC-3-H16",
+      "bidirectional": true,
+      "distanceM": 3.71,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R09->GHC-3-H10",
+      "from": "GHC-3-R09",
+      "to": "GHC-3-H10",
+      "bidirectional": true,
+      "distanceM": 4.35,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R09->GHC-3-R08",
+      "from": "GHC-3-R09",
+      "to": "GHC-3-R08",
+      "bidirectional": true,
+      "distanceM": 4.42,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R14->GHC-3-H14",
+      "from": "GHC-3-R14",
+      "to": "GHC-3-H14",
+      "bidirectional": true,
+      "distanceM": 6.58,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R16->GHC-3-H03",
+      "from": "GHC-3-R16",
+      "to": "GHC-3-H03",
+      "bidirectional": true,
+      "distanceM": 9.92,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R16->GHC-3-H04",
+      "from": "GHC-3-R16",
+      "to": "GHC-3-H04",
+      "bidirectional": true,
+      "distanceM": 12.46,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R16->GHC-3-R21",
+      "from": "GHC-3-R16",
+      "to": "GHC-3-R21",
+      "bidirectional": true,
+      "distanceM": 14.41,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R17->GHC-3-H07",
+      "from": "GHC-3-R17",
+      "to": "GHC-3-H07",
+      "bidirectional": true,
+      "distanceM": 7.18,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R17->GHC-3-H12",
+      "from": "GHC-3-R17",
+      "to": "GHC-3-H12",
+      "bidirectional": true,
+      "distanceM": 7.75,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R20->GHC-3-H11",
+      "from": "GHC-3-R20",
+      "to": "GHC-3-H11",
+      "bidirectional": true,
+      "distanceM": 3.6,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R21->GHC-3-R17",
+      "from": "GHC-3-R21",
+      "to": "GHC-3-R17",
+      "bidirectional": true,
+      "distanceM": 9.96,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R22->GHC-3-H03",
+      "from": "GHC-3-R22",
+      "to": "GHC-3-H03",
+      "bidirectional": true,
+      "distanceM": 8.54,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R22->GHC-3-H05",
+      "from": "GHC-3-R22",
+      "to": "GHC-3-H05",
+      "bidirectional": true,
+      "distanceM": 10.77,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-S01->GHC-3-E02",
+      "from": "GHC-3-S01",
+      "to": "GHC-3-E02",
+      "bidirectional": true,
+      "distanceM": 4.11,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-S01->GHC-3-R01",
+      "from": "GHC-3-S01",
+      "to": "GHC-3-R01",
+      "bidirectional": true,
+      "distanceM": 11.35,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-S02->GHC-3-H13",
+      "from": "GHC-3-S02",
+      "to": "GHC-3-H13",
+      "bidirectional": true,
+      "distanceM": 8.92,
+      "tiredIndex": 2,
+      "wheelchair": false
+    },
+    {
+      "id": "GHC-3-S02->GHC-3-H17",
+      "from": "GHC-3-S02",
+      "to": "GHC-3-H17",
+      "bidirectional": true,
+      "distanceM": 4.62,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-S03->GHC-4-S02",
+      "from": "GHC-3-S03",
+      "to": "GHC-4-S02",
+      "bidirectional": true,
+      "distanceM": 43.67,
+      "tiredIndex": 2,
+      "wheelchair": false
+    }
+  ]
+}

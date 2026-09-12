@@ -968,6 +968,13 @@
       "kind": "stairs"
     },
     {
+      "id": "GHC-4-V01",
+      "floorId": "GHC:4",
+      "x": 1718.57,
+      "y": 1255.93,
+      "kind": "elevator"
+    },
+    {
       "id": "GHC-4-W01",
       "floorId": "GHC:4",
       "x": 1540.3,
@@ -1615,6 +1622,15 @@
       "distanceM": 1.71,
       "tiredIndex": 1,
       "wheelchair": false
+    },
+    {
+      "id": "GHC-4-H39->GHC-6-V01",
+      "from": "GHC-4-H39",
+      "to": "GHC-6-V01",
+      "bidirectional": true,
+      "distanceM": 32.22,
+      "tiredIndex": 0.25,
+      "wheelchair": true
     },
     {
       "id": "GHC-4-H40->GHC-4-H41",
@@ -2335,6 +2351,24 @@
       "distanceM": 32.66,
       "tiredIndex": 2,
       "wheelchair": false
+    },
+    {
+      "id": "GHC-4-V01->GHC-4-H39",
+      "from": "GHC-4-V01",
+      "to": "GHC-4-H39",
+      "bidirectional": true,
+      "distanceM": 4.13,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-4-V01->GHC-5-V01",
+      "from": "GHC-4-V01",
+      "to": "GHC-5-V01",
+      "bidirectional": true,
+      "distanceM": 30.69,
+      "tiredIndex": 0.25,
+      "wheelchair": true
     }
   ]
 }

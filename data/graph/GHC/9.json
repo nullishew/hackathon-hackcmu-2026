@@ -1,5 +1,13 @@
 {
   "floorId": "GHC:9",
-  "nodes": [],
+  "nodes": [
+    {
+      "id": "GHC-9-V01",
+      "floorId": "GHC:9",
+      "x": 1569.51,
+      "y": 570.41,
+      "kind": "elevator"
+    }
+  ],
   "edges": []
 }

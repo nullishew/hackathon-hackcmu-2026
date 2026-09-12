@@ -1,5 +1,23 @@
 {
   "floorId": "GHC:8",
-  "nodes": [],
-  "edges": []
+  "nodes": [
+    {
+      "id": "GHC-8-V01",
+      "floorId": "GHC:8",
+      "x": 1563.56,
+      "y": 529.54,
+      "kind": "elevator"
+    }
+  ],
+  "edges": [
+    {
+      "id": "GHC-8-V01->GHC-9-V01",
+      "from": "GHC-8-V01",
+      "to": "GHC-9-V01",
+      "bidirectional": true,
+      "distanceM": 45.26,
+      "tiredIndex": 0.25,
+      "wheelchair": true
+    }
+  ]
 }

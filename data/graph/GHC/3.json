@@ -156,6 +156,13 @@
       "kind": "corner"
     },
     {
+      "id": "GHC-3-H21",
+      "floorId": "GHC:3",
+      "x": 764.64,
+      "y": 824.72,
+      "kind": "corner"
+    },
+    {
       "id": "GHC-3-R01",
       "floorId": "GHC:3",
       "x": 932.73,
@@ -235,14 +242,6 @@
       "y": 821.8,
       "kind": "room",
       "roomNumber": "3813"
-    },
-    {
-      "id": "GHC-3-R11",
-      "floorId": "GHC:3",
-      "x": 1274.16,
-      "y": 817.18,
-      "kind": "room",
-      "roomNumber": "3811"
     },
     {
       "id": "GHC-3-R12",
@@ -335,8 +334,8 @@
     {
       "id": "GHC-3-R23",
       "floorId": "GHC:3",
-      "x": 1100,
-      "y": 826.06,
+      "x": 1091.32,
+      "y": 787.26,
       "kind": "room",
       "roomNumber": "3200"
     },
@@ -362,6 +361,13 @@
       "x": 1265.72,
       "y": 899.45,
       "kind": "stairs"
+    },
+    {
+      "id": "GHC-3-V01",
+      "floorId": "GHC:3",
+      "x": 1289.31,
+      "y": 808.84,
+      "kind": "elevator"
     }
   ],
   "edges": [
@@ -523,7 +529,7 @@
       "from": "GHC-3-H10",
       "to": "GHC-3-R23",
       "bidirectional": true,
-      "distanceM": 9.34,
+      "distanceM": 9.41,
       "tiredIndex": 1,
       "wheelchair": true
     },
@@ -591,6 +597,15 @@
       "wheelchair": true
     },
     {
+      "id": "GHC-3-H21->GHC-3-R23",
+      "from": "GHC-3-H21",
+      "to": "GHC-3-R23",
+      "bidirectional": true,
+      "distanceM": 23.2,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
       "id": "GHC-3-R01->GHC-3-H02",
       "from": "GHC-3-R01",
       "to": "GHC-3-H02",
@@ -623,6 +638,15 @@
       "to": "GHC-3-E01",
       "bidirectional": true,
       "distanceM": 18.51,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R03->GHC-3-H21",
+      "from": "GHC-3-R03",
+      "to": "GHC-3-H21",
+      "bidirectional": true,
+      "distanceM": 12.46,
       "tiredIndex": 1,
       "wheelchair": true
     },
@@ -677,6 +701,15 @@
       "to": "GHC-3-R08",
       "bidirectional": true,
       "distanceM": 4.42,
+      "tiredIndex": 1,
+      "wheelchair": true
+    },
+    {
+      "id": "GHC-3-R09->GHC-3-V01",
+      "from": "GHC-3-R09",
+      "to": "GHC-3-V01",
+      "bidirectional": true,
+      "distanceM": 3.38,
       "tiredIndex": 1,
       "wheelchair": true
     },
@@ -814,6 +847,15 @@
       "distanceM": 43.67,
       "tiredIndex": 2,
       "wheelchair": false
+    },
+    {
+      "id": "GHC-3-V01->GHC-4-V01",
+      "from": "GHC-3-V01",
+      "to": "GHC-4-V01",
+      "bidirectional": true,
+      "distanceM": 22.2,
+      "tiredIndex": 0.25,
+      "wheelchair": true
     }
   ]
 }

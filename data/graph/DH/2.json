@@ -469,6 +469,7 @@
       "from": "DH-2-H01",
       "to": "DH-2-H02",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 9.74,
       "tiredIndex": 1,
       "wheelchair": true
@@ -478,6 +479,7 @@
       "from": "DH-2-H01",
       "to": "DH-2-R07",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 19.68,
       "tiredIndex": 1,
       "wheelchair": true
@@ -487,6 +489,7 @@
       "from": "DH-2-H02",
       "to": "DH-2-H03",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 8.78,
       "tiredIndex": 1,
       "wheelchair": true
@@ -496,6 +499,7 @@
       "from": "DH-2-H02",
       "to": "DH-2-R26",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 7.92,
       "tiredIndex": 1,
       "wheelchair": true
@@ -505,6 +509,7 @@
       "from": "DH-2-H02",
       "to": "DH-2-V01",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 15.02,
       "tiredIndex": 1,
       "wheelchair": true
@@ -514,6 +519,7 @@
       "from": "DH-2-H03",
       "to": "DH-2-H04",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 9.35,
       "tiredIndex": 1,
       "wheelchair": true
@@ -523,6 +529,7 @@
       "from": "DH-2-H03",
       "to": "DH-2-V03",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 17.1,
       "tiredIndex": 1,
       "wheelchair": true
@@ -532,6 +539,7 @@
       "from": "DH-2-H04",
       "to": "DH-2-H05",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 12.01,
       "tiredIndex": 1,
       "wheelchair": true
@@ -541,6 +549,7 @@
       "from": "DH-2-H04",
       "to": "DH-2-H06",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 4.46,
       "tiredIndex": 1,
       "wheelchair": true
@@ -550,6 +559,7 @@
       "from": "DH-2-H04",
       "to": "DH-2-R03",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 16.91,
       "tiredIndex": 1,
       "wheelchair": true
@@ -559,6 +569,7 @@
       "from": "DH-2-H05",
       "to": "DH-2-R07",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 17.7,
       "tiredIndex": 1,
       "wheelchair": true
@@ -568,6 +579,7 @@
       "from": "DH-2-H06",
       "to": "DH-2-H07",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 10.47,
       "tiredIndex": 1,
       "wheelchair": true
@@ -577,6 +589,7 @@
       "from": "DH-2-H06",
       "to": "DH-2-R04",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 8.97,
       "tiredIndex": 1,
       "wheelchair": true
@@ -586,6 +599,7 @@
       "from": "DH-2-H07",
       "to": "DH-2-H08",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 4.36,
       "tiredIndex": 1,
       "wheelchair": true
@@ -595,6 +609,7 @@
       "from": "DH-2-H07",
       "to": "DH-2-R05",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 5.91,
       "tiredIndex": 1,
       "wheelchair": true
@@ -604,6 +619,7 @@
       "from": "DH-2-H08",
       "to": "DH-2-H14",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 23.48,
       "tiredIndex": 1,
       "wheelchair": true
@@ -613,6 +629,7 @@
       "from": "DH-2-H08",
       "to": "DH-2-R06",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 5.6,
       "tiredIndex": 1,
       "wheelchair": true
@@ -622,6 +639,7 @@
       "from": "DH-2-H10",
       "to": "DH-2-H11",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 37.14,
       "tiredIndex": 1,
       "wheelchair": true
@@ -631,6 +649,7 @@
       "from": "DH-2-H10",
       "to": "DH-2-R01",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 8.97,
       "tiredIndex": 1,
       "wheelchair": true
@@ -640,6 +659,7 @@
       "from": "DH-2-H11",
       "to": "DH-2-H12",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 40.13,
       "tiredIndex": 1,
       "wheelchair": true
@@ -649,6 +669,7 @@
       "from": "DH-2-H11",
       "to": "DH-2-R02",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 13.44,
       "tiredIndex": 1,
       "wheelchair": true
@@ -658,6 +679,7 @@
       "from": "DH-2-H12",
       "to": "DH-2-H13",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 48.58,
       "tiredIndex": 1,
       "wheelchair": true
@@ -667,6 +689,7 @@
       "from": "DH-2-H13",
       "to": "DH-2-H08",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 5.67,
       "tiredIndex": 1,
       "wheelchair": true
@@ -676,6 +699,7 @@
       "from": "DH-2-H14",
       "to": "DH-2-H15",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 15.49,
       "tiredIndex": 1,
       "wheelchair": true
@@ -685,6 +709,7 @@
       "from": "DH-2-H14",
       "to": "DH-2-H16",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 9.33,
       "tiredIndex": 1,
       "wheelchair": true
@@ -694,6 +719,7 @@
       "from": "DH-2-H14",
       "to": "DH-2-R09",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 9.74,
       "tiredIndex": 1,
       "wheelchair": true
@@ -703,6 +729,7 @@
       "from": "DH-2-H14",
       "to": "DH-2-V04",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 6.5,
       "tiredIndex": 1,
       "wheelchair": true
@@ -712,6 +739,7 @@
       "from": "DH-2-H15",
       "to": "DH-2-R08",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 9.83,
       "tiredIndex": 1,
       "wheelchair": true
@@ -721,6 +749,7 @@
       "from": "DH-2-H16",
       "to": "DH-2-H17",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 9.84,
       "tiredIndex": 1,
       "wheelchair": true
@@ -730,6 +759,7 @@
       "from": "DH-2-H16",
       "to": "DH-2-R10",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 7.16,
       "tiredIndex": 1,
       "wheelchair": true
@@ -739,6 +769,7 @@
       "from": "DH-2-H17",
       "to": "DH-2-H18",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 11.07,
       "tiredIndex": 1,
       "wheelchair": true
@@ -748,6 +779,7 @@
       "from": "DH-2-H17",
       "to": "DH-2-H19",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 9.25,
       "tiredIndex": 1,
       "wheelchair": true
@@ -757,6 +789,7 @@
       "from": "DH-2-H19",
       "to": "DH-2-H20",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 10.49,
       "tiredIndex": 1,
       "wheelchair": true
@@ -766,6 +799,7 @@
       "from": "DH-2-H19",
       "to": "DH-2-R11",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 11.91,
       "tiredIndex": 1,
       "wheelchair": true
@@ -775,6 +809,7 @@
       "from": "DH-2-H20",
       "to": "DH-2-H21",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 17.3,
       "tiredIndex": 1,
       "wheelchair": true
@@ -784,6 +819,7 @@
       "from": "DH-2-H20",
       "to": "DH-2-H29",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 7.73,
       "tiredIndex": 1,
       "wheelchair": true
@@ -793,6 +829,7 @@
       "from": "DH-2-H21",
       "to": "DH-2-H22",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 13.19,
       "tiredIndex": 1,
       "wheelchair": true
@@ -802,6 +839,7 @@
       "from": "DH-2-H22",
       "to": "DH-2-H23",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 4.88,
       "tiredIndex": 1,
       "wheelchair": true
@@ -811,6 +849,7 @@
       "from": "DH-2-H23",
       "to": "DH-2-H24",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 13.75,
       "tiredIndex": 1,
       "wheelchair": true
@@ -820,6 +859,7 @@
       "from": "DH-2-H24",
       "to": "DH-2-H25",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 5.02,
       "tiredIndex": 1,
       "wheelchair": true
@@ -829,6 +869,7 @@
       "from": "DH-2-H25",
       "to": "DH-2-H26",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 9.74,
       "tiredIndex": 1,
       "wheelchair": true
@@ -838,6 +879,7 @@
       "from": "DH-2-H26",
       "to": "DH-2-H27",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 7.4,
       "tiredIndex": 1,
       "wheelchair": true
@@ -847,6 +889,7 @@
       "from": "DH-2-H26",
       "to": "DH-2-R25",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 11.13,
       "tiredIndex": 1,
       "wheelchair": true
@@ -856,6 +899,7 @@
       "from": "DH-2-H27",
       "to": "DH-2-H28",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 6.27,
       "tiredIndex": 1,
       "wheelchair": true
@@ -865,6 +909,7 @@
       "from": "DH-2-H27",
       "to": "DH-2-R15",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 7.32,
       "tiredIndex": 1,
       "wheelchair": true
@@ -874,6 +919,7 @@
       "from": "DH-2-H28",
       "to": "DH-2-H21",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 10.93,
       "tiredIndex": 1,
       "wheelchair": true
@@ -883,6 +929,7 @@
       "from": "DH-2-H28",
       "to": "DH-2-R14",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 12.4,
       "tiredIndex": 1,
       "wheelchair": true
@@ -892,6 +939,7 @@
       "from": "DH-2-H29",
       "to": "DH-2-H30",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 12.91,
       "tiredIndex": 1,
       "wheelchair": true
@@ -901,6 +949,7 @@
       "from": "DH-2-H29",
       "to": "DH-2-R12",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 7.58,
       "tiredIndex": 1,
       "wheelchair": true
@@ -910,6 +959,7 @@
       "from": "DH-2-H29",
       "to": "DH-2-R16",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 10.34,
       "tiredIndex": 1,
       "wheelchair": true
@@ -919,6 +969,7 @@
       "from": "DH-2-H30",
       "to": "DH-2-H31",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 15.38,
       "tiredIndex": 1,
       "wheelchair": true
@@ -928,6 +979,7 @@
       "from": "DH-2-H30",
       "to": "DH-2-R13",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 9.86,
       "tiredIndex": 1,
       "wheelchair": true
@@ -937,6 +989,7 @@
       "from": "DH-2-H30",
       "to": "DH-2-R17",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 7.26,
       "tiredIndex": 1,
       "wheelchair": true
@@ -946,6 +999,7 @@
       "from": "DH-2-H31",
       "to": "DH-2-R18",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 10.07,
       "tiredIndex": 1,
       "wheelchair": true
@@ -955,6 +1009,7 @@
       "from": "DH-2-H31",
       "to": "DH-2-R20",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 13.17,
       "tiredIndex": 1,
       "wheelchair": true
@@ -964,6 +1019,7 @@
       "from": "DH-2-H31",
       "to": "DH-2-R21",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 7.12,
       "tiredIndex": 1,
       "wheelchair": true
@@ -973,6 +1029,7 @@
       "from": "DH-2-H31",
       "to": "DH-2-R23",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 9.09,
       "tiredIndex": 1,
       "wheelchair": true
@@ -982,6 +1039,7 @@
       "from": "DH-2-R08",
       "to": "DH-2-H18",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 13.79,
       "tiredIndex": 1,
       "wheelchair": true
@@ -991,6 +1049,7 @@
       "from": "DH-2-R18",
       "to": "DH-2-R19",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 8.5,
       "tiredIndex": 1,
       "wheelchair": true
@@ -1000,6 +1059,7 @@
       "from": "DH-2-R18",
       "to": "DH-2-R22",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 9.1,
       "tiredIndex": 1,
       "wheelchair": true
@@ -1009,6 +1069,7 @@
       "from": "DH-2-R20",
       "to": "DH-2-R24",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 9.47,
       "tiredIndex": 1,
       "wheelchair": true
@@ -1018,6 +1079,7 @@
       "from": "DH-2-R26",
       "to": "DH-2-H10",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 9.79,
       "tiredIndex": 2,
       "wheelchair": false
@@ -1027,6 +1089,7 @@
       "from": "DH-2-S01",
       "to": "DH-2-H01",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 9.99,
       "tiredIndex": 1,
       "wheelchair": true
@@ -1036,6 +1099,7 @@
       "from": "DH-2-S02",
       "to": "DH-2-H16",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 5.34,
       "tiredIndex": 1,
       "wheelchair": true
@@ -1045,6 +1109,7 @@
       "from": "DH-2-V01",
       "to": "WEH-7-V02",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 10.17,
       "tiredIndex": 0.25,
       "wheelchair": true
@@ -1054,6 +1119,7 @@
       "from": "DH-2-V02",
       "to": "DH-2-H01",
       "bidirectional": true,
+      "kind": "walk",
       "distanceM": 5.06,
       "tiredIndex": 1,
       "wheelchair": true
@@ -1063,6 +1129,7 @@
       "from": "DH-2-V03",
       "to": "DH-1-V03",
       "bidirectional": true,
+      "kind": "elevator",
       "distanceM": 8.03,
       "tiredIndex": 0.25,
       "wheelchair": true
@@ -1072,6 +1139,7 @@
       "from": "DH-2-V04",
       "to": "DH-1-V04",
       "bidirectional": true,
+      "kind": "elevator",
       "distanceM": 8.62,
       "tiredIndex": 0.25,
       "wheelchair": true

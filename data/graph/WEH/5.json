@@ -43,6 +43,7 @@
       "from": "WEH-5-S01",
       "to": "WEH-6-S01",
       "bidirectional": true,
+      "kind": "stairs",
       "distanceM": 13.62,
       "tiredIndex": 2,
       "wheelchair": false
@@ -52,6 +53,7 @@
       "from": "WEH-5-S02",
       "to": "WEH-6-S02",
       "bidirectional": true,
+      "kind": "stairs",
       "distanceM": 12.54,
       "tiredIndex": 2,
       "wheelchair": false
@@ -61,6 +63,7 @@
       "from": "WEH-5-S03",
       "to": "WEH-6-S03",
       "bidirectional": true,
+      "kind": "stairs",
       "distanceM": 11.91,
       "tiredIndex": 2,
       "wheelchair": false

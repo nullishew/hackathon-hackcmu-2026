@@ -11,18 +11,72 @@
       },
       "floors": [
         {
+          "id": "GHC:1",
+          "buildingId": "GHC",
+          "floorKey": "1",
+          "ordinal": 1,
+          "elevationM": -13.5,
+          "image": {
+            "src": "/floorplans/GHC/1.png",
+            "widthPx": 3020,
+            "heightPx": 2094
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "GHC:2",
+          "buildingId": "GHC",
+          "floorKey": "2",
+          "ordinal": 2,
+          "elevationM": -9,
+          "image": {
+            "src": "/floorplans/GHC/2.png",
+            "widthPx": 3020,
+            "heightPx": 2094
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "GHC:3",
+          "buildingId": "GHC",
+          "floorKey": "3",
+          "ordinal": 3,
+          "elevationM": -4.5,
+          "image": {
+            "src": "/floorplans/GHC/3.png",
+            "widthPx": 3020,
+            "heightPx": 2094
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
           "id": "GHC:4",
           "buildingId": "GHC",
           "floorKey": "4",
           "ordinal": 4,
           "elevationM": 0,
           "image": {
-            "src": "/floorplans/GHC/4.svg",
-            "widthPx": 1000,
-            "heightPx": 600
+            "src": "/floorplans/GHC/4.png",
+            "widthPx": 3020,
+            "heightPx": 2094
           },
           "calibration": {
-            "pixelsPerMeter": 10,
+            "pixelsPerMeter": 14.173228346456693,
             "originX": 0,
             "originY": 0,
             "rotationDeg": 0
@@ -35,12 +89,12 @@
           "ordinal": 5,
           "elevationM": 4.5,
           "image": {
-            "src": "/floorplans/GHC/5.svg",
-            "widthPx": 1000,
-            "heightPx": 600
+            "src": "/floorplans/GHC/5.png",
+            "widthPx": 3020,
+            "heightPx": 2094
           },
           "calibration": {
-            "pixelsPerMeter": 10,
+            "pixelsPerMeter": 14.173228346456693,
             "originX": 0,
             "originY": 0,
             "rotationDeg": 0
@@ -53,12 +107,12 @@
           "ordinal": 6,
           "elevationM": 9,
           "image": {
-            "src": "/floorplans/GHC/6.svg",
-            "widthPx": 1000,
-            "heightPx": 600
+            "src": "/floorplans/GHC/6.png",
+            "widthPx": 3020,
+            "heightPx": 2094
           },
           "calibration": {
-            "pixelsPerMeter": 10,
+            "pixelsPerMeter": 14.173228346456693,
             "originX": 0,
             "originY": 0,
             "rotationDeg": 0
@@ -71,12 +125,12 @@
           "ordinal": 7,
           "elevationM": 13.5,
           "image": {
-            "src": "/floorplans/GHC/7.svg",
-            "widthPx": 1000,
-            "heightPx": 600
+            "src": "/floorplans/GHC/7.png",
+            "widthPx": 3020,
+            "heightPx": 2094
           },
           "calibration": {
-            "pixelsPerMeter": 10,
+            "pixelsPerMeter": 14.173228346456693,
             "originX": 0,
             "originY": 0,
             "rotationDeg": 0
@@ -89,12 +143,12 @@
           "ordinal": 8,
           "elevationM": 18,
           "image": {
-            "src": "/floorplans/GHC/8.svg",
-            "widthPx": 1000,
-            "heightPx": 600
+            "src": "/floorplans/GHC/8.png",
+            "widthPx": 3020,
+            "heightPx": 2094
           },
           "calibration": {
-            "pixelsPerMeter": 10,
+            "pixelsPerMeter": 14.173228346456693,
             "originX": 0,
             "originY": 0,
             "rotationDeg": 0
@@ -107,12 +161,132 @@
           "ordinal": 9,
           "elevationM": 22.5,
           "image": {
-            "src": "/floorplans/GHC/9.svg",
-            "widthPx": 1000,
-            "heightPx": 600
+            "src": "/floorplans/GHC/9.png",
+            "widthPx": 3020,
+            "heightPx": 2094
           },
           "calibration": {
-            "pixelsPerMeter": 10,
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "NSH",
+      "name": "Newell Simon Hall",
+      "shortName": "Newell-Simon",
+      "placement": {
+        "x": 180,
+        "y": 0,
+        "rotationDeg": 0
+      },
+      "floors": [
+        {
+          "id": "NSH:B",
+          "buildingId": "NSH",
+          "floorKey": "B",
+          "ordinal": -1,
+          "elevationM": -22.5,
+          "image": {
+            "src": "/floorplans/NSH/B.png",
+            "widthPx": 2636,
+            "heightPx": 2003
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "NSH:A",
+          "buildingId": "NSH",
+          "floorKey": "A",
+          "ordinal": 0,
+          "elevationM": -18,
+          "image": {
+            "src": "/floorplans/NSH/A.png",
+            "widthPx": 2636,
+            "heightPx": 2003
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "NSH:1",
+          "buildingId": "NSH",
+          "floorKey": "1",
+          "ordinal": 1,
+          "elevationM": -13.5,
+          "image": {
+            "src": "/floorplans/NSH/1.png",
+            "widthPx": 2636,
+            "heightPx": 2003
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "NSH:2",
+          "buildingId": "NSH",
+          "floorKey": "2",
+          "ordinal": 2,
+          "elevationM": -9,
+          "image": {
+            "src": "/floorplans/NSH/2.png",
+            "widthPx": 2636,
+            "heightPx": 2003
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "NSH:3",
+          "buildingId": "NSH",
+          "floorKey": "3",
+          "ordinal": 3,
+          "elevationM": -4.5,
+          "image": {
+            "src": "/floorplans/NSH/3.png",
+            "widthPx": 2636,
+            "heightPx": 2003
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
+            "originX": 0,
+            "originY": 0,
+            "rotationDeg": 0
+          }
+        },
+        {
+          "id": "NSH:4",
+          "buildingId": "NSH",
+          "floorKey": "4",
+          "ordinal": 4,
+          "elevationM": 0,
+          "image": {
+            "src": "/floorplans/NSH/4.png",
+            "widthPx": 2636,
+            "heightPx": 2003
+          },
+          "calibration": {
+            "pixelsPerMeter": 14.173228346456693,
             "originX": 0,
             "originY": 0,
             "rotationDeg": 0

@@ -13,6 +13,7 @@ import { StackScene } from '../viewer3d/StackScene'
 import { FilterPanel } from './FilterPanel'
 import { LegView } from './LegView'
 import { SearchField } from './SearchField'
+import { NARROW_QUERY, useMediaQuery } from './useMediaQuery'
 
 export function ViewerScreen() {
   const project = useProjectStore((s) => s.project)
@@ -26,6 +27,15 @@ export function ViewerScreen() {
   const [exaggeration, setExaggeration] = useState(2.5)
   /** When set, we are looking at one floor flat instead of the whole stack. */
   const [drillFloorId, setDrillFloorId] = useState<string | null>(null)
+
+  const isNarrow = useMediaQuery(NARROW_QUERY)
+  /**
+   * Null until the user says otherwise, so the panel follows the layout by default —
+   * open as a column on a wide screen, closed as a drawer over the map on a phone —
+   * and only then honours an explicit choice.
+   */
+  const [panelChoice, setPanelChoice] = useState<boolean | null>(null)
+  const panelOpen = panelChoice ?? !isNarrow
 
   useEffect(() => {
     void load()
@@ -70,13 +80,21 @@ export function ViewerScreen() {
   }
 
   return (
-    <div className="viewer-screen">
-      <aside className="viewer-panel">
+    <div className={panelOpen ? 'viewer-screen' : 'viewer-screen panel-collapsed'}>
+      <aside className="viewer-panel" id="viewer-panel" inert={!panelOpen}>
         <header className="viewer-header">
           <h1>CMU Nav</h1>
           <Link to="/entry" className="link">
             Data entry →
           </Link>
+          <button
+            type="button"
+            className="panel-close"
+            aria-label="Hide the route panel"
+            onClick={() => setPanelChoice(false)}
+          >
+            ✕
+          </button>
         </header>
 
         <SearchField
@@ -150,7 +168,11 @@ export function ViewerScreen() {
                     <button
                       type="button"
                       className={drillFloorId === leg.floorId ? 'leg active' : 'leg'}
-                      onClick={() => setDrillFloorId(leg.floorId)}
+                      onClick={() => {
+                        setDrillFloorId(leg.floorId)
+                        // The drawer is covering the floor they just asked to see.
+                        if (isNarrow) setPanelChoice(false)
+                      }}
                     >
                       <span className="leg-floor">
                         {leg.floorId.split(':')[0]} {floor?.floorKey ?? ''}
@@ -175,8 +197,27 @@ export function ViewerScreen() {
         )}
       </aside>
 
+      {isNarrow && panelOpen && (
+        <button
+          type="button"
+          className="panel-scrim"
+          aria-label="Hide the route panel"
+          onClick={() => setPanelChoice(false)}
+        />
+      )}
+
       <main className="viewer-stage">
         <div className="stage-controls">
+          <button
+            type="button"
+            className="panel-toggle"
+            aria-expanded={panelOpen}
+            aria-controls="viewer-panel"
+            onClick={() => setPanelChoice(!panelOpen)}
+          >
+            {panelOpen ? '⟨ Hide' : '☰ Route'}
+          </button>
+
           <button
             type="button"
             className={drillFloorId ? 'tab' : 'tab active'}
